@@ -42,7 +42,7 @@ const Header = () => {
     <>
       <div className="header w-full">
         <div className="top_header bg-[#D3D3D3]">
-         <div className="md:w-[1300px] w-full mx-auto flex justify-between py-3">
+         <div className="md:max-w-[1300px] w-full mx-auto flex justify-between py-3 xl:px-0 px-5">
          <div className="social_icons flex gap-3">
             <Image src='/icons/tiktok.svg' alt="social_icon" width="17" height="17" />
             <Image src='/icons/insta.svg' alt="social_icon" width="17" height="17"/>
@@ -55,7 +55,7 @@ const Header = () => {
          </div>
         </div>
         <div className="main_header">
-          <div className="md:w-[1300px] w-full mx-auto flex justify-between items-center">
+          <div className="md:max-w-[1300px] w-full mx-auto flex justify-between items-center xl:px-0 px-5">
               <div className="logo  w-1/4">
               <Link href={"/"}>
                 <Image src="/icons/Logo.svg" alt="" width={148} height={127} />
@@ -68,7 +68,7 @@ const Header = () => {
                 selectedKeys={[current]}
                 mode="horizontal"
                 items={items}
-                className="bigmenu justify-center border-none 2xl:text-2xl md:text-lg font-semibold"
+                className="bigmenu justify-center border-none 2xl:text-2xl md:text-lg font-medium gap-4"
               />
               <Button
                 className="menubtn"

@@ -11,7 +11,7 @@ const itemVariants = {
 
 const EarnConfidence = () => {
   return (
-    <div className="earn_confidence">
+    <div className="earn_confidence lg:my-2 my-10">
       <motion.article
         initial="hidden"
         animate="visible"

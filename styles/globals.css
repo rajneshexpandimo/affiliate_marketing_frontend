@@ -38,11 +38,99 @@
 * {
   font-family: "Poppins", sans-serif !important;
 }
-
+.box-shadow{
+  box-shadow: 0 0 10px 0 #0000002E;
+}
+.profit_list_1::after {
+  content: '';
+  background: url('/icons/line_with_arrow.svg');
+  position: absolute;
+  right: -30%;
+  top: 50%;
+  height: 42px;
+  width: 118px;
+  background-repeat: no-repeat;
+}
+.profit_list_2::after {
+  content: '';
+  background: url('/icons/line_with_arrow.svg');
+  position: absolute;
+  right: -30%;
+  top: 15%;
+  height: 42px;
+  width: 118px;
+  background-repeat: no-repeat;
+  transform: rotateX(179deg);
+}
+.profit_list_3::after {
+  content: '';
+  background: url('/icons/line_with_arrow.svg');
+  position: absolute;
+  left: -30%;
+  top: 50%;
+  height: 42px;
+  width: 118px;
+  background-repeat: no-repeat;
+  transform: rotateY(179deg);
+}
+.profit_list_4::after {
+  content: '';
+  background: url('/icons/line_with_arrow.svg');
+  position: absolute;
+  left:  -30%;
+  top: 15%;
+  height: 42px;
+  width: 118px;
+  background-repeat: no-repeat;
+  transform: rotate(179deg);
+}
 @media (min-width: 769px) {
   .menubtn {
     display: none;
   }
+}
+@media screen and (max-width:1280px) {
+  .social_profit_wrapper {
+    min-width: 280px;
+    max-width: 280px;
+    min-height: 280px;
+    max-height: 280px;
+}
+.social_profit_image_wrapper {
+  min-width: 245px;
+  max-width: 245px;
+  min-height: 245px;
+  max-height: 245px;
+}
+.social_profit_image{
+  min-width: 220px;
+    max-width: 220px;
+    min-height: 220px;
+    max-height: 220px;
+}
+}
+@media screen and (max-width:1279px) {
+  .profit_list::after{
+    display: none;
+  }
+  /* .social_profit_wrapper {
+    min-width: 280px;
+    max-width: 280px;
+    min-height: 280px;
+    max-height: 280px;
+}
+.social_profit_image_wrapper {
+  min-width: 245px;
+  max-width: 245px;
+  min-height: 245px;
+  max-height: 245px;
+}
+.social_profit_image{
+  min-width: 220px;
+    max-width: 220px;
+    min-height: 220px;
+    max-height: 220px;
+} */
 }
 @media screen and (max-width:769px) {
     .bigmenu {    

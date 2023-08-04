@@ -58,7 +58,7 @@ const Header = () => {
           <div className="md:max-w-[1300px] w-full mx-auto flex justify-between items-center xl:px-0 px-5">
               <div className="logo  w-1/4">
               <Link href={"/"}>
-                <Image src="/icons/Logo.svg" alt="" width={148} height={127} />
+                <Image src="/icons/Logo.svg" alt="" width={148} height={127} className="2xl:w-auto lg:w-[43%]"/>
                 </Link>
               </div>
           
@@ -68,10 +68,10 @@ const Header = () => {
                 selectedKeys={[current]}
                 mode="horizontal"
                 items={items}
-                className="bigmenu justify-center border-none 2xl:text-2xl md:text-lg font-medium gap-4"
+                className="bigmenu justify-center border-none 2xl:text-2xl md:text-lg font-medium gap-7"
               />
               <Button
-                className="menubtn"
+                className="menubtn float-right shadow-none text-[#000] bg-transparent"
                 type="primary"
                 shape="circle"
                 icon={<MenuOutlined />}
@@ -81,44 +81,37 @@ const Header = () => {
                 title={
                   <Link href={"/"}>
                     <Image
-                      src="/logos/expandimo-logo.png"
+                      src="/icons/Logo.svg"
                       alt="logo"
-                      className="w-1/2"
-                      width="220"
+                      // className="float-right"
+                      width="100"
                       height="50"
                     />
                   </Link>
                 }
-                placement="right"
+                placement="left"
                 onClose={onClose}
                 open={state.visible}
+                className="mobile_menu_drawer"
               >
                 <div
                   style={{ display: "flex", flexDirection: "column" }}
                   className="mobile_menu"
                 >
                   <Button type="text" href="/about">
-                    About
+                    Marketing
                   </Button>
                   <Button type="text" href="/services">
-                    Services
+                    Earn
                   </Button>
                   <Button type="text" href="/industry">
-                    Industry
+                    Learn
                   </Button>
-                  <Button type="text" href="/success_stories">
-                    Success Stories
-                  </Button>
-                  <Button type="text" href="/company">
-                    Company
-                  </Button>
-                  <Button type="text" href="/industry">
-                    Industry
-                  </Button>
+                 
                 </div>
               </Drawer>
             </div>
-            <div className="register_sec w-1/4">
+            <div className="register_sec w-1/4 m-hide">
               <Button className="bg-[#295DA7] float-right text-white h-[60px] w-[194px] font-semibold ">REGISTER NOW</Button>
             </div>
           </div>

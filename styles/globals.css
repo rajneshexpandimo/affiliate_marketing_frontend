@@ -87,11 +87,20 @@
 
 .footer_ul_list li {
   line-height: 27px;
-  font-size: 18px;
+  padding-bottom: 6px;
+  font-size: 16px;
   font-weight: 400;
   display: flex;
   align-items: center;
 }
+
+
+
+/* .footer_ul_list li span svg{
+  width: 13px;
+  height: 15px;
+  font-weight: bold;
+} */
 .footer_disclaimer {
   width: 803px;
   margin-top: 30px;
@@ -99,10 +108,12 @@
   font-size: 16px !important;
   line-height: 24px !important;
 }
+
 @media (min-width: 769px) {
   .menubtn {
     display: none;
   }
+
 }
 @media screen and (max-width: 1280px) {
   .social_profit_wrapper {
@@ -151,9 +162,10 @@
   .bigmenu {
     display: none;
   }
+.m-hide{
+  display: none;
 }
-@media screen and (max-width: 769px) {
-  .bigmenu {
-    display: none;
-  }
+.mobile_menu_drawer .ant-drawer-header-title {
+  flex-direction: row-reverse;
+}
 }

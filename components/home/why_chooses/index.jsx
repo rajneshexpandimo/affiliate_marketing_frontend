@@ -76,7 +76,7 @@ const WhyChooses = () => {
                   Experienced team providing consistent support.
                 </p>
               </div>
-              <div className="bg-[#1F57A1] p-3 rounded-full flex lg:flex-row-reverse flex-row items-center gap-3 profit_list profit_list_4 relative sm:max-w-[392px] sm:min-w-[392px">
+              <div className="bg-[#1F57A1] p-3 rounded-full flex lg:flex-row-reverse flex-row items-center gap-3 profit_list profit_list_4 relative sm:max-w-[392px] sm:min-w-[392px]">
                 <div className="bg-white p-2 rounded-full min-w-[78px] min-h-[78px] font-bold flex items-center justify-center text-4xl">
                   4
                 </div>

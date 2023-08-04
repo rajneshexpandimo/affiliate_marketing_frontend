@@ -10,21 +10,21 @@ const itemVariants = {
 const HeroSection = () => {
   return (
     <>
-      <div className="bg-[#D3D3D3] w-full py-36 xl:px-0 px-5">
+      <div className="bg-[#D3D3D3] w-full sm:py-36 py-10 xl:px-0 px-5">
         <motion.article
           initial="hidden"
           animate="visible"
           exit={{ opacity: 0, transition: { duration: 1 } }}
           variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
         >
-          <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col justify-between ">
+          <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col-reverse justify-between ">
             <div className="lg:w-1/2 w-full ">
               <motion.h1
                 variants={{
                   hidden: { opacity: 0, x: -50 },
                   visible,
                 }}
-                className="font-bold text-[64px] pb-5"
+                className="font-bold sm:text-[64px] text-[30px] sm:pb-5 pb-3  "
               >
                 <span className="text-[#295DA7]">Empowering</span> you to
                 monetise your platform
@@ -35,7 +35,7 @@ const HeroSection = () => {
                   hidden: { opacity: 0, x: -50 },
                   visible,
                 }}
-                className="text-2xl pb-12 font-light"
+                className="sm:text-2xl text-[18px] sm:pb-12 pb-5 font-light"
               >
                 Unlock your earning potential today!
               </motion.p>

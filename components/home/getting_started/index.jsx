@@ -3,15 +3,15 @@ import React from "react";
 
 const GettingStarted = () => {
   return (
-    <div className="md:max-w-[1300px] w-full mx-auto my-20">
-      <h2 className="text-5xl pb-3 font-bold text-center">
+    <div className="md:max-w-[1300px] w-full mx-auto sm:my-20 my-10 lg:px-0 px-2">
+      <h2 className="sm:text-5xl text-3xl pb-3 font-bold text-center">
         <span className="text-[#1F57A1] ">Getting </span>started is easy.
       </h2>
-      <p className="text-2xl lg:max-w-[989px] mx-auto pt-3 text-center">
+      <p className="sm:text-2xl text-[18px] lg:max-w-[989px] mx-auto pt-3 text-center">
         Take control of your financial future with SocialProfit.io
       </p>
-      <div className="flex max-w-[1220px] mx-auto gap-[113px] mt-16">
-        <div className="w-1/3">
+      <div className="flex sm:flex-row flex-col max-w-[1220px] mx-auto sm:gap-[113px] gap-9 sm:mt-16 mt-5">
+        <div className="sm:w-1/3 w-full">
           <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
             <Image
               src="/icons/user_signup.svg"
@@ -28,7 +28,7 @@ const GettingStarted = () => {
              Create your account and fill out the sign up form.
           </p>
         </div>
-        <div className="w-1/3">
+        <div className="sm:w-1/3 w-full">
           <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
             <Image
               src="/icons/review.svg"
@@ -45,7 +45,7 @@ const GettingStarted = () => {
            A member of the onboarding team will review your application and assign you to a manager.
           </p>
         </div>
-        <div className="w-1/3">
+        <div className="sm:w-1/3 w-full">
           <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
             <Image
               src="/icons/heart.svg"

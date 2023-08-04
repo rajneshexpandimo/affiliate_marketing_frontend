@@ -37,7 +37,7 @@ const EarnConfidence = () => {
                 hidden: { opacity: 0, x: 50 },
                 visible,
               }}
-              className="font-bold text-[50px] pb-5 leading-[66px]"
+              className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal"
             >
               <span className="text-[#295DA7]">Earn</span> with confidence
             </motion.h1>

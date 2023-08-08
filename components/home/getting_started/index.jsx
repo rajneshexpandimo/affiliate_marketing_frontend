@@ -1,6 +1,20 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
+const cardVariantsdown = {
+  offscreen: {
+    opacity: 0,
+    y: 50,
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
 const GettingStarted = () => {
   return (
     <div className="md:max-w-[1300px] w-full mx-auto sm:my-20 my-10 lg:px-0 px-2">
@@ -10,8 +24,15 @@ const GettingStarted = () => {
       <p className="sm:text-2xl text-[18px] lg:max-w-[989px] mx-auto pt-3 text-center">
         Take control of your financial future with SocialProfit.io
       </p>
+      <motion.div
+              className="card-container"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+            >
       <div className="flex sm:flex-row flex-col max-w-[1220px] mx-auto sm:gap-[113px] gap-9 sm:mt-16 mt-5">
-        <div className="sm:w-1/3 w-full">
+        
+        <motion.div variants={cardVariantsdown} className="sm:w-1/3 w-full">
           <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
             <Image
               src="/icons/user_signup.svg"
@@ -27,8 +48,8 @@ const GettingStarted = () => {
           <p className="text-[18px] leading-6 text-center">
              Create your account and fill out the sign up form.
           </p>
-        </div>
-        <div className="sm:w-1/3 w-full">
+        </motion.div >
+        <motion.div variants={cardVariantsdown} className="sm:w-1/3 w-full">
           <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
             <Image
               src="/icons/review.svg"
@@ -44,8 +65,8 @@ const GettingStarted = () => {
           <p className="text-[18px] leading-6 text-center">
            A member of the onboarding team will review your application and assign you to a manager.
           </p>
-        </div>
-        <div className="sm:w-1/3 w-full">
+        </motion.div >
+        <motion.div variants={cardVariantsdown}  className="sm:w-1/3 w-full">
           <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
             <Image
               src="/icons/heart.svg"
@@ -61,8 +82,9 @@ const GettingStarted = () => {
           <p className="text-[18px] leading-6 text-center">
            Use our tools to start making money.
           </p>
-        </div>
+        </motion.div >
       </div>
+      </motion.div>
     </div>
   );
 };

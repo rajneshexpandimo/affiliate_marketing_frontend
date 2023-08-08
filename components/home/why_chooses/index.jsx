@@ -2,13 +2,20 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const visible = { opacity: 1, x: 0, transition: { duration: 0.9 } };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible,
+const cardVariants = {
+  offscreen: {
+    opacity: 0, scale: 0.5 
+  },
+  onscreen: {
+    opacity: 1, scale: 1,
+    transition:{
+      duration: 0.999,
+      delay: 0.5,
+      ease: [0, 0.9, 0.9, 1]
+    },
+  }
 };
-
 const WhyChooses = () => {
   return (
     <>
@@ -20,20 +27,24 @@ const WhyChooses = () => {
       />
       <div className="bg-[#D3D3D3] w-full py-5">
         <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 pt-5 ">
-          <motion.h1
-            variants={{
-              hidden: { opacity: 0, x: 50 },
-              visible,
-            }}
+          <h1
             className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center"
           >
             Why choose
             <span className="text-[#295DA7]"> SocialProfit</span>
-          </motion.h1>
-          <motion.p className="sm:text-2xl text-[18px] leading-8 font-light text-center">
+          </h1>
+          <p className="sm:text-2xl text-[18px] leading-8 font-light text-center">
             eo eget bibendum sodales, augue velit cursus nunc
-          </motion.p>
-          <div className="flex lg:py-24 py-10 justify-between lg:flex-row flex-col">
+          </p>
+          <motion.div
+              className="card-container"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+            >
+          <motion.div 
+          variants={cardVariants}
+          className="flex lg:py-24 py-10 justify-between lg:flex-row flex-col">
             <div className="flex lg:w-1/3 w-full justify-between flex-col lg:items-start items-center lg:gap-0 gap-5">
               <div className="bg-[#1F57A1] p-3 rounded-full flex flex-row items-center gap-3 profit_list profit_list_1 relative sm:max-w-[392px] sm:min-w-[392px]">
                 <div className="bg-white p-2 rounded-full min-w-[78px] min-h-[78px] font-bold flex items-center justify-center text-4xl">
@@ -85,7 +96,8 @@ const WhyChooses = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
+          </motion.div>
         </div>
       </div>
       {/* <img

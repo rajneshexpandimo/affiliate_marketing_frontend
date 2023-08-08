@@ -148,9 +148,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-[#d3d3d3]">
-        <div className=" text-[#333333] font-medium text-[16px] 2xl:py-[27px] py-[15px] lg:max-w-[1302px] w-full my-0 mx-auto 2xl:px-0 px-5 flex justify-between items-center">
+        <div className=" text-[#333333] font-medium text-[16px] 2xl:py-[27px] py-[15px] lg:max-w-[1302px] w-full my-0 mx-auto 2xl:px-0 px-5 flex md:flex-row flex-col justify-between md:items-center items-start">
           <div>© Copyright 2023 | socialprofit.io | All Rights Reserved</div>
-          <div className="social_icons flex gap-3">
+          <div className="social_icons flex gap-3 md:pt-0 pt-2">
             <div className="footer_icon">
               <div className="border-[#1F57A1] border-2 rounded-full p-1">
                 <div className="bg-[#1F57A1] p-2 rounded-3xl">

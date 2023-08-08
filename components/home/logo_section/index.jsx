@@ -1,5 +1,19 @@
 import React from "react";
+import { motion } from "framer-motion";
 
+const cardVariants = {
+  offscreen: {
+    opacity: 0, scale: 0.5 
+  },
+  onscreen: {
+    opacity: 1, scale: 1,
+    transition:{
+      duration: 0.999,
+      delay: 0.5,
+      ease: [0, 0.9, 0.9, 1]
+    },
+  }
+};
 const LogoSection = () => {
   return (
     <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 text-center sm:mb-10 mb-0 sm:mt-16 mt-0">
@@ -14,7 +28,15 @@ const LogoSection = () => {
           linking, and data tools.
         </p>
       </div>
-      <div className="logoSectionImages flex sm:flex-row flex-col flex-wrap justify-between py-10">
+      <motion.div
+        className="card-container"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
+      <motion.div 
+       variants={cardVariants}
+      className="logoSectionImages flex sm:flex-row flex-col flex-wrap justify-between py-10">
         <div className="border-2 rounded-full mb-4  box-shadow sm:w-[32%] 2xl:p-5 p-4 ">
           <img
             src="images/pmc.png"
@@ -69,7 +91,8 @@ const LogoSection = () => {
             className="rounded-[57px]  mx-auto 2xl:w-full md:w-3/5"
           />
         </div>
-      </div>
+      </motion.div>
+      </motion.div>
     </div>
   );
 };

@@ -53,12 +53,18 @@ const HeroSection = () => {
               >
                 Unlock your earning potential today!
               </motion.p>
+              <motion.div
+                className="box inline-block"
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
               <motion.button
                 //  variants={cardVariantsLeft}
                 className="border-2 border-s-[21px] p-4 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold"
               >
                 GET STARTED
               </motion.button>
+              </motion.div>
               </motion.div>
             </div>
             {/* <Image src='/images/home_banner.png' alt='' width={690} height={561} />

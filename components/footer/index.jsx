@@ -9,7 +9,7 @@ const Footer = () => {
     <img
     src="/images/bluewave.png"
     alt="upper wave"
-    className="md:mb-[-20px] sm:mb-[-10px] mb-[-4px] w-full"
+    className="w-full"
     
   />
       <div className="bg-[#1f57a1] w-full shadow-none">

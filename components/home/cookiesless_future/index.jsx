@@ -36,7 +36,7 @@ const CookieLessFuture = () => {
   };
 
   return (
-    <div className='bg-[url("/images/cookieless_banner.png")] bg-no-repeat bg-cover bg-top sm:py-[180px] py-[100px]'>
+    <div className='bg-[url("/images/cookieless_banner.png")] bg-no-repeat bg-cover bg-top 2xl:py-[250px] sm:py-[180px] py-[100px]'>
       <motion.div
         className="card-container"
         initial="offscreen"

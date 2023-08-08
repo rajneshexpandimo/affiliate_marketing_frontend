@@ -30,7 +30,7 @@ const GettingStarted = () => {
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
             >
-      <div className="flex sm:flex-row flex-col max-w-[1220px] mx-auto sm:gap-[113px] gap-9 sm:mt-16 mt-5">
+      <div className="flex md:flex-row flex-col max-w-[1220px] mx-auto sm:gap-[113px] gap-9 sm:mt-16 mt-5 justify-center items-center">
         
         <motion.div variants={cardVariantsdown} className="sm:w-1/3 w-full">
           <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { Menu, Button, Drawer, Space } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import Image from "next/image";
-
 const items = [
   {
     label: <Link href="/about"> Marketing </Link>,
@@ -42,26 +42,52 @@ const Header = () => {
     <>
       <div className="header w-full">
         <div className="top_header bg-[#D3D3D3]">
-         <div className="md:max-w-[1300px] w-full mx-auto flex justify-between py-3 xl:px-0 px-5">
-         <div className="social_icons flex gap-3">
-            <Image src='/icons/tiktok.svg' alt="social_icon" width="17" height="17" />
-            <Image src='/icons/insta.svg' alt="social_icon" width="17" height="17"/>
-            <Image src='/icons/twitter.svg' alt="social_icon" width="17" height="17"/>
-            <Image src='/icons/linkedIn.svg' alt="social_icon" width="17" height="17"/>
+          <div className="md:max-w-[1300px] w-full mx-auto flex justify-between py-3 xl:px-0 px-5">
+            <div className="social_icons flex gap-3">
+              <Image
+                src="/icons/tiktok.svg"
+                alt="social_icon"
+                width="17"
+                height="17"
+              />
+              <Image
+                src="/icons/insta.svg"
+                alt="social_icon"
+                width="17"
+                height="17"
+              />
+              <Image
+                src="/icons/twitter.svg"
+                alt="social_icon"
+                width="17"
+                height="17"
+              />
+              <Image
+                src="/icons/linkedIn.svg"
+                alt="social_icon"
+                width="17"
+                height="17"
+              />
+            </div>
+            <div className="login">
+              <Link href={"/"}>Login</Link>
+            </div>
           </div>
-          <div className="login">
-            <Link href={"/"}>Login</Link>
-          </div>
-         </div>
         </div>
         <div className="main_header">
           <div className="md:max-w-[1300px] w-full mx-auto flex justify-between items-center xl:px-0 px-5">
-              <div className="logo  w-1/4">
+            <div className="logo  w-1/4">
               <Link href={"/"}>
-                <Image src="/icons/Logo.svg" alt="" width={148} height={127} className="2xl:w-auto lg:w-[43%]"/>
-                </Link>
-              </div>
-          
+                <Image
+                  src="/icons/Logo.svg"
+                  alt=""
+                  width={148}
+                  height={127}
+                  className="2xl:w-auto lg:w-[43%]"
+                />
+              </Link>
+            </div>
+
             <div className="main_navbar w-1/2">
               <Menu
                 onClick={onClick}
@@ -107,12 +133,19 @@ const Header = () => {
                   <Button type="text" href="/industry">
                     Learn
                   </Button>
-                 
                 </div>
               </Drawer>
             </div>
             <div className="register_sec w-1/4 m-hide">
-              <Button className="bg-[#295DA7] float-right text-white h-[60px] w-[194px] font-semibold ">REGISTER NOW</Button>
+              <motion.div
+                className="inline-block float-right"
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <Button className="bg-[#295DA7] float-right text-white h-[60px] w-[194px] font-semibold ">
+                  REGISTER NOW
+                </Button>
+              </motion.div>
             </div>
           </div>
         </div>

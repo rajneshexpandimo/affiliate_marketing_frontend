@@ -35,8 +35,8 @@ const TrustThePros = () => {
     <img
     src="/images/grey_wave.png"
     alt="upper wave"
-    className="md:mb-[-20px] sm:mb-[-10px] mb-[-4px] w-full"
-    style={{ transform: "rotateX(221deg)" }}
+    className=" w-full"
+    style={{ transform: "rotateX(180deg)" }}
   />
   <div className="bg-[#D3D3D3] w-full py-5">
     <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 pt-5 sm:my-10">
@@ -55,13 +55,13 @@ const TrustThePros = () => {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8 }}
       >
-    <motion.div  variants={cardVariantsLeft}  className='flex sm:flex-row flex-col lg:max-w-[708px] mx-auto sm:justify-between justify-center items-center gap-4 my-10'>
+    <motion.div  variants={cardVariantsLeft}  className='flex md:flex-row flex-col lg:max-w-[708px] mx-auto sm:justify-between justify-center items-center gap-4 my-10'>
         <Image src='/images/tag.png' width={150} height={150} alt="certified against fraud" quality={100} />
         <Image src='/images/tag1.png' width={165} height={150} alt="certified against fraud" quality={100}/>
         <Image src='/images/tag3.png' width={161} height={150} alt="certified against fraud" quality={100}/>
         <Image src='/images/balanced.png' width={150} height={150} alt="certified against fraud" quality={100}/>
     </motion.div>
-    <motion.div variants={cardVariantsRight} className='flex sm:flex-row flex-col lg:max-w-[768px] mx-auto sm:justify-between justify-center items-center gap-4 my-10'>
+    <motion.div variants={cardVariantsRight} className='flex md:flex-row flex-col lg:max-w-[768px] mx-auto sm:justify-between justify-center items-center gap-4 my-10'>
         <Image src='/images/certified.png' width={342} height={122} alt="certified against fraud" className='box-shadow' />
         <Image src='/images/iab_certified.png' width={180} height={130} alt="certified against fraud" />
         <Image src='/images/iab_blue_certified.png' width={222} height={138} alt="certified against fraud" />

@@ -25,65 +25,65 @@ const GettingStarted = () => {
         Take control of your financial future with SocialProfit.io
       </p>
       <motion.div
-              className="card-container"
-              initial="offscreen"
-              whileInView="onscreen"
-              viewport={{ once: true, amount: 0.8 }}
-            >
-      <div className="flex md:flex-row flex-col max-w-[1220px] mx-auto sm:gap-[113px] gap-9 sm:mt-16 mt-5 justify-center items-center">
-        
-        <motion.div variants={cardVariantsdown} className="sm:w-1/3 w-full">
-          <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
-            <Image
-              src="/icons/user_signup.svg"
-              width={84}
-              height={79}
-              alt="userSignup"
-              className="mx-auto "
-            />
-          </div>
-          <h3 className="text-[25px] font-semibold leading-8 text-center py-2">
-            Sign Up
-          </h3>
-          <p className="text-[18px] leading-6 text-center">
-             Create your account and fill out the sign up form.
-          </p>
-        </motion.div >
-        <motion.div variants={cardVariantsdown} className="sm:w-1/3 w-full">
-          <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
-            <Image
-              src="/icons/review.svg"
-              width={84}
-              height={79}
-              alt="userSignup"
-              className="mx-auto "
-            />
-          </div>
-          <h3 className="text-[25px] font-semibold leading-8 text-center py-2">
-          Review
-          </h3>
-          <p className="text-[18px] leading-6 text-center">
-           A member of the onboarding team will review your application and assign you to a manager.
-          </p>
-        </motion.div >
-        <motion.div variants={cardVariantsdown}  className="sm:w-1/3 w-full">
-          <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
-            <Image
-              src="/icons/heart.svg"
-              width={84}
-              height={79}
-              alt="userSignup"
-              className="mx-auto "
-            />
-          </div>
-          <h3 className="text-[25px] font-semibold leading-8 text-center py-2">
-          Do what you love
-          </h3>
-          <p className="text-[18px] leading-6 text-center">
-           Use our tools to start making money.
-          </p>
-        </motion.div >
-      </div>
+        className="card-container"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
+        <div className="flex md:flex-row flex-col max-w-[1220px] mx-auto sm:gap-[113px] gap-9 sm:mt-16 mt-5 justify-center md:items-start items-center">
+          <motion.div variants={cardVariantsdown} className="sm:w-1/3 w-full">
+            <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
+              <Image
+                src="/icons/user_signup.svg"
+                width={84}
+                height={79}
+                alt="userSignup"
+                className="mx-auto "
+              />
+            </div>
+            <h3 className="text-[25px] font-semibold leading-8 text-center py-2">
+              Sign Up
+            </h3>
+            <p className="text-[18px] leading-6 text-center">
+               Create your account and fill out the sign up form.
+            </p>
+          </motion.div>
+          <motion.div variants={cardVariantsdown} className="sm:w-1/3 w-full">
+            <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
+              <Image
+                src="/icons/review.svg"
+                width={84}
+                height={79}
+                alt="userSignup"
+                className="mx-auto "
+              />
+            </div>
+            <h3 className="text-[25px] font-semibold leading-8 text-center py-2">
+              Review
+            </h3>
+            <p className="text-[18px] leading-6 text-center">
+               A member of the onboarding team will review your application and
+              assign you to a manager.
+            </p>
+          </motion.div>
+          <motion.div variants={cardVariantsdown} className="sm:w-1/3 w-full">
+            <div className="bg-[#1F57A1] rounded-full border-[15px] p-3 border-white box-shadow min-w-[160px] max-w-[160px] min-h-[160px] max-h-[160px] flex items-center justify-center mx-auto">
+              <Image
+                src="/icons/heart.svg"
+                width={84}
+                height={79}
+                alt="userSignup"
+                className="mx-auto "
+              />
+            </div>
+            <h3 className="text-[25px] font-semibold leading-8 text-center py-2">
+              Do what you love
+            </h3>
+            <p className="text-[18px] leading-6 text-center">
+               Use our tools to start making money.
+            </p>
+          </motion.div>
+        </div>
       </motion.div>
     </div>
   );

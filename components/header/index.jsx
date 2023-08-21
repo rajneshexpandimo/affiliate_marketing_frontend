@@ -6,15 +6,19 @@ import Link from "next/link";
 import Image from "next/image";
 const items = [
   {
-    label: <Link href="/about"> Marketing </Link>,
+    label: <Link href="/about"> About Us </Link>,
     key: "marketing",
   },
   {
-    label: <Link href="/services/why-choose-us"> Earn </Link>,
+    label: <Link href="/pffer"> Offer </Link>,
     key: "earn",
   },
   {
-    label: <Link href="/services/how-it-works"> Learn </Link>,
+    label: <Link href="/contact_us"> Contact Us </Link>,
+    key: "learn",
+  },
+  {
+    label: <Link href="/blog"> blog </Link>,
     key: "learn",
   },
 ];

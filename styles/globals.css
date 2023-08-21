@@ -40,6 +40,29 @@
 .box-shadow {
   box-shadow: 0 0 10px 0 #0000002e;
 }
+.bg-blue{
+  background-color: #1F57A1;
+}
+.partner_network_img::after {
+  content: '';
+  height: 14px;
+  width: 815px;
+  position: absolute;
+  left: 100%;
+  background: #ccc;
+  top:50%;
+  z-index: 1;
+}
+.partner_network::before {
+  content: '';
+  height: 14px;
+  width: 335px;
+  position: absolute;
+  left: 140%;
+  background: url('/icons/dots.svg') no-repeat;
+  top:53%;
+  z-index: 99;
+}
 .profit_list_1::after {
   content: "";
   background: url("/icons/line_with_arrow.svg");
@@ -83,7 +106,70 @@
   background-repeat: no-repeat;
   transform: rotate(179deg);
 }
-
+/* .borderleft {
+  border-left: 15px solid #f6b552;
+  position: absolute;
+  top: 50%;
+  bottom: 0%;
+} */
+.borderbottomfirst{
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  bottom: -4%;
+  width: 111%;
+  z-index: -1;
+  border-top: 0px;
+  border-left: 20px;
+  border-right: 20px;
+  border-bottom: 20px;
+  border-bottom-left-radius: 47px;
+  border-bottom-right-radius: 50px;
+  border-color: #08bbb3;
+  border-style: solid;
+}
+.borderbottommiddle{
+  background: transparent;
+  position: absolute;
+  bottom: 50%;
+  left: -20px;
+  top: -4%;
+  width: 111%;
+  z-index: -1;
+  border-top: 0px;
+  border-left: 20px;
+  border-right: 20px;
+  border-top: 20px;
+  border-top-left-radius: 47px;
+  border-top-right-radius: 50px;
+  border-color: #08bbb3;
+  border-style: solid;
+}
+.borderbottomlast{
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  bottom: -4%;
+  width: 111%;
+  z-index: -1;
+  border-top: 0px;
+  border-left: 20px;
+  border-right: 20px;
+  border-bottom: 20px;
+  border-bottom-left-radius: 47px;
+  border-bottom-right-radius: 50px;
+  border-color: #f6b552;
+  border-style: solid;
+}
+/* .borderright {
+  border-right: 15px solid #f6b552;
+  position: absolute;
+  top: 50%;
+  bottom: 0%;
+  right: 0;
+} */
 @media (min-width: 769px) {
   .menubtn {
     display: none;
@@ -131,6 +217,17 @@
     min-height: 220px;
     max-height: 220px;
 } */
+}
+@media screen and (max-width:1024px) {
+  .partner_network_img::after {
+    width: 740px;
+  }
+  
+}
+@media screen and (max-width:991px) {
+  .partner_network_img::after,.partner_network::before {
+    display: none;
+  }
 }
 @media screen and (max-width: 769px) {
   .bigmenu {

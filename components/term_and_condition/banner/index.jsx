@@ -30,9 +30,10 @@ const cardVariantsRight = {
 const Banner = () => {
   return (
     <>
-      <div className="bg-[#D3D3D3] w-full sm:py-36 py-10 xl:px-0 px-5">
-          <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col-reverse justify-around ">
-            <div className="lg:w-1/2 w-full ">
+      <div className="bg-[#D3D3D3] w-full  xl:px-0 px-5">
+        <p className="md:max-w-[1300px] w-full mx-auto  text-center text-lg pt-8" >PLEASE READ THESE TERMS OF SERVICE CAREFULLY AS THEY CONTAIN IMPORTANT INFORMATION REGARDING YOUR LEGAL RIGHTS</p>
+          <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col-reverse justify-between sm:py-10 py-10">
+            <div className="lg:w-1/2 w-full flex flex-col justify-center">
             <motion.div
               className="card-container"
               initial="offscreen"
@@ -43,14 +44,14 @@ const Banner = () => {
                 //  variants={cardVariantsLeft}
                 className="font-bold sm:text-[64px] text-[30px] sm:pb-5 pb-3  "
               >
-                <span className="text-[#295DA7]">Looking to earn More ?</span> Your Search Ends here.
+                <span className="text-[#295DA7]">Terms </span> & Conditions
               </motion.h1>
 
               <motion.p
                 //  variants={cardVariantsLeft}
                 className="sm:text-2xl text-[18px] text-[#333333] sm:pb-12 pb-5"
               >
-                Magic Boost is a Program Where You can Find Incredible Payouts
+                SocialProfit.IO is a company that enables advertisers (“Advertisers”) to market their products online with the help of publishers (“Affiliates”). SocialProfit.IO contracts only with Advertisers and has no responsibility in the relationship between Advertisers and Affiliates. SocialProfit.IO  offers tools to improve, register and facilitate online marketing through Affiliates (the “Service”). 
               </motion.p>
               <motion.div
                 className="box inline-block"
@@ -59,9 +60,9 @@ const Banner = () => {
               >
               <motion.button
                 //  variants={cardVariantsLeft}
-                className="border-2 border-s-[21px] px-9 py-4 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold"
+                className="border-2 border-s-[21px] px-9 py-4 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold uppercase"
               >
-                TRY IT FREE
+                More Details
               </motion.button>
               </motion.div>
               </motion.div>
@@ -78,8 +79,9 @@ const Banner = () => {
             >
               <motion.img
                  variants={cardVariantsRight}
-                src="images/earn-banner.png"
+                src="images/term&conditions-banner.png"
                 alt="banner"
+                className="float-right"
               />
               </motion.div>
             </div>

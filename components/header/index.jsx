@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 const items = [
   {
-    label: <Link href="/about"> About Us </Link>,
+    label: <Link href="/about_us"> About Us </Link>,
     key: "marketing",
   },
   {

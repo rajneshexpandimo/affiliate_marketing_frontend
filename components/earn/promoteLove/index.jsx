@@ -37,76 +37,76 @@ const PromoteLove = () => {
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
           >
-            <div className="flex lg:py-24 py-10 justify-between lg:flex-row flex-col items-center">
+            <div className="flex lg:py-24 py-10 justify-around lg:flex-row flex-col items-center promote_love_wrapper">
               <div className="relative rounded-[20px]  z-50">
-              <div className="bg-white flex flex-col justify-center rounded-[20px] min-w-[375px] max-w-[375px] min-h-[375px] max-h-[375px] border-b-[15px] border-[#08bbb3]">
-                <div className="border-[15px] border-[#08bbb3] box-shadow rounded-full min-w-[140px] min-h-[140px] max-w-[160px] max-h-[160px] flex items-center justify-center absolute top-[-20%] left-[28%]">
-                  <div
-                    className="bg-white box-shadow rounded-full min-w-[130px] min-h-[130px] max-w-[130px] max-h-[130px] flex items-center justify-center
+                <div className="bg-white flex flex-col justify-center rounded-[20px] xl:min-w-[375px] xl:max-w-[375px] xl:min-h-[375px] xl:max-h-[375px] lg:min-w-[345px] lg:max-w-[345px] lg:min-h-[345px] lg:max-h-[345px] min-w-[305px] max-w-[305px] min-h-[305px] max-h-[305px] border-b-[15px] border-[#08bbb3]">
+                  <div className="border-[15px] border-[#08bbb3] box-shadow rounded-full min-w-[140px] min-h-[140px] max-w-[160px] max-h-[160px] flex items-center justify-center absolute top-[-20%] lg:left-[28%] left-[24%]">
+                    <div
+                      className="bg-white box-shadow rounded-full min-w-[130px] min-h-[130px] max-w-[130px] max-h-[130px] flex items-center justify-center
                 "
-                  >
-                    {" "}
-                    <Image
-                      src="/icons/bulb.svg"
-                      width={59}
-                      height={59}
-                      alt="Promote your love icon"
-                      // className="rounded-full"
-                    />
+                    >
+                      {" "}
+                      <Image
+                        src="/icons/bulb.svg"
+                        width={59}
+                        height={59}
+                        alt="Promote your love icon"
+                        // className="rounded-full"
+                      />
+                    </div>
                   </div>
-                </div>
-                <p className="xl:text-[27px] text-base text-[#333] xl:leading-[36px] leading-normal text-center font-medium px-[90px]">
-                  Choose from a list of offer
-                </p>
-                <div className="borderbottomfirst"></div>
-              </div>
-              </div>
-              <div className="relative z-50">
-              <div className="relative bg-white flex flex-col justify-center rounded-[20px] min-w-[375px] max-w-[375px] min-h-[375px] max-h-[375px] border-[#f6b552]">
-               <div className="borderbottommiddle"></div>
-                <p className="xl:text-[27px] text-base text-[#333] xl:leading-[36px] leading-normal text-center font-medium px-[90px]">
-                  Choose from a list of offer
-                </p>
-                <div className="border-[15px] border-[#00bdea] box-shadow rounded-full min-w-[140px] min-h-[140px] max-w-[160px] max-h-[160px] flex items-center justify-center absolute bottom-[-20%] left-[28%]">
-                  <div
-                    className="bg-white box-shadow rounded-full min-w-[130px] min-h-[130px] max-w-[130px] max-h-[130px] flex items-center justify-center
-                "
-                  >
-                    {" "}
-                    <Image
-                      src="/icons/MaleUser.svg"
-                      width={59}
-                      height={59}
-                      alt="Promote your love icon"
-                      // className="rounded-full"
-                    />
-                  </div>
+                  <p className="xl:text-[27px] text-base text-[#333] xl:leading-[36px] leading-normal text-center font-medium px-[90px]">
+                    Choose from a list of offer
+                  </p>
+                  <div className="borderbottomfirst"></div>
                 </div>
               </div>
-              </div>
-              <div className="relative bg-white z-50 rounded-[20px]"> 
-              <div className=" flex flex-col justify-center rounded-[20px] min-w-[375px] max-w-[375px] min-h-[375px] max-h-[375px] border-b-[15px] border-[#f6b552] z-50">
-                <div className="border-[15px] border-[#f6b552] box-shadow rounded-full min-w-[140px] min-h-[140px] max-w-[160px] max-h-[160px] flex items-center justify-center absolute top-[-20%] left-[28%]">
-                  <div
-                    className="bg-white box-shadow rounded-full min-w-[130px] min-h-[130px] max-w-[130px] max-h-[130px] flex items-center justify-center
+              <div className="relative rounded-[20px] z-50">
+                <div className="relative bg-white flex flex-col justify-center rounded-[20px] xl:min-w-[375px] xl:max-w-[375px] xl:min-h-[375px] xl:max-h-[375px] lg:min-w-[345px] lg:max-w-[345px] lg:min-h-[345px] lg:max-h-[345px] min-w-[305px] max-w-[305px] min-h-[305px] max-h-[305px] lg:border-t-[15px] promote_love_middle_div border-[#00bdea]">
+                  <div className="borderbottommiddle"></div>
+                  <p className="xl:text-[27px] text-base text-[#333] xl:leading-[36px] leading-normal text-center font-medium px-[30px]">
+                    The Commission Per Referral is stated Under each Offer.
+                  </p>
+                  <div className="border-[15px] border-[#00bdea] box-shadow rounded-full min-w-[140px] min-h-[140px] max-w-[160px] max-h-[160px] flex items-center justify-center absolute lg:bottom-[-20%] bottom-auto lg:top-auto lg:left-[28%] left-[24%] promote_love_middle_icon">
+                    <div
+                      className="bg-white box-shadow rounded-full min-w-[130px] min-h-[130px] max-w-[130px] max-h-[130px] flex items-center justify-center
                 "
-                  >
-                    {" "}
-                    <Image
-                      src="/icons/Airport.svg"
-                      width={59}
-                      height={59}
-                      alt="Promote your love icon"
-                      // className="rounded-full"
-                    />
+                    >
+                      {" "}
+                      <Image
+                        src="/icons/MaleUser.svg"
+                        width={59}
+                        height={59}
+                        alt="Promote your love icon"
+                        // className="rounded-full"
+                      />
+                    </div>
                   </div>
                 </div>
-                <p className="xl:text-[27px] text-base text-[#333] xl:leading-[36px] leading-normal text-center font-medium px-[90px]">
-                  Choose from a list of offer
-                </p>
-                <div className="borderbottomlast"></div>
-                {/* <div className="borderright"></div> */}
               </div>
+              <div className="relative bg-white z-50 rounded-[20px]">
+                <div className="relative bg-white flex flex-col justify-center rounded-[20px] xl:min-w-[375px] xl:max-w-[375px] xl:min-h-[375px] xl:max-h-[375px] lg:min-w-[345px] lg:max-w-[345px] lg:min-h-[345px] lg:max-h-[345px] min-w-[305px] max-w-[305px] min-h-[305px] max-h-[305px] border-b-[15px] border-[#f6b552] z-50">
+                  <div className="border-[15px] border-[#f6b552] box-shadow rounded-full min-w-[140px] min-h-[140px] max-w-[160px] max-h-[160px] flex items-center justify-center absolute top-[-20%] lg:left-[28%] left-[24%]">
+                    <div
+                      className="bg-white box-shadow rounded-full min-w-[130px] min-h-[130px] max-w-[130px] max-h-[130px] flex items-center justify-center
+                "
+                    >
+                      {" "}
+                      <Image
+                        src="/icons/Airport.svg"
+                        width={59}
+                        height={59}
+                        alt="Promote your love icon"
+                        // className="rounded-full"
+                      />
+                    </div>
+                  </div>
+                  <p className="xl:text-[27px] text-base text-[#333] xl:leading-[36px] leading-normal text-center font-medium px-[30px]">
+                    Preview of how much you’ll be Paid.
+                  </p>
+                  <div className="borderbottomlast"></div>
+                  {/* <div className="borderright"></div> */}
+                </div>
               </div>
               {/* <motion.div
                 variants={cardVariants}

@@ -10,7 +10,7 @@ const items = [
     key: "marketing",
   },
   {
-    label: <Link href="/pffer"> Offer </Link>,
+    label: <Link href="/offer"> Offer </Link>,
     key: "earn",
   },
   {

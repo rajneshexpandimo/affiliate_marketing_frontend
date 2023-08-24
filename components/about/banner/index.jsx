@@ -30,12 +30,12 @@ const cardVariantsRight = {
 const Banner = () => {
   return (
     <>
-    <div className="relative lg:mb-[250px]  z-10 about_hero_section lg:before:content-[''] lg:before:bg-[url('/images/about_bg1.png')] lg:before:bg-contain lg:before:bg-no-repeat lg:before:absolute lg:before:left-0 lg:before:w-[310px] lg:before:h-[456px] lg:before:top-[33%] before:z-0 lg:after:content-[''] lg:after:bg-[url('/images/about_bg2.png')] lg:after:bg-contain lg:after:bg-no-repeat lg:after:absolute lg:after:right-0 lg:after:w-[350px] lg:after:h-[456px] lg:after:top-[8%] lg:after:z-0">
-      <div className="bg-[#D3D3D3] w-full sm:pt-28 sm:pb-60 xl:px-0 px-5 lg:py-0 py-5 ">
+    <div className="relative lg:mb-[250px] lg:py-0 py-5 z-10 about_hero_section lg:before:content-[''] lg:before:bg-[url('/images/about_bg1.png')] lg:before:bg-contain lg:before:bg-no-repeat lg:before:absolute lg:before:left-0 lg:before:w-[310px] lg:before:h-[456px] lg:before:top-[33%] before:z-0 lg:after:content-[''] lg:after:bg-[url('/images/about_bg2.png')] lg:after:bg-contain lg:after:bg-no-repeat lg:after:absolute lg:after:right-0 lg:after:w-[350px] lg:after:h-[456px] lg:after:top-[8%] lg:after:z-0">
+      <div className="bg-[#D3D3D3] w-full sm:pt-28 sm:pb-60 xl:px-0 px-5 ">
         <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col-reverse justify-around">
           <div className="w-full z-50">
             <motion.div
-              className="text-center"
+              className="text-center md:py-0 py-5"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}

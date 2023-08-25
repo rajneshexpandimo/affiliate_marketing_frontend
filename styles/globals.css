@@ -180,6 +180,25 @@
   line-height: 32px;
   
 }
+.ant-input:hover{
+border: 0 !important;
+}
+label.ant-form-item-required::before {
+  display: none !important;
+}
+.contact_us_form span.ant-checkbox-inner {
+  border-radius: 0px !important;
+  background-color: #FFFFFF80;
+  border: none !important;
+}
+.ant-form .ant-checkbox-inner{
+  background-color: #D9D9D9;
+  border-radius: 0px !important;
+  border: none !important;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
 @media (min-width: 769px) {
   .menubtn {
     display: none;

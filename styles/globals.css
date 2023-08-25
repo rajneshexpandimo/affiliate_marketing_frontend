@@ -199,6 +199,24 @@ label.ant-form-item-required::before {
   width: 20px;
   margin-right: 8px;
 }
+.blog_search span.ant-input-affix-wrapper {
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  border-right: none !important;
+  /* padding: 8px 11px !important; */
+}
+.blog_search .ant-input-wrapper{
+  background: #fff;
+  border-radius: 20px;
+}
+.blog_search span.ant-input-group-addon{
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+.blog_search .ant-input-search-button{
+  border-radius: 20px !important;
+  background-color: #1F57A1;
+}
 @media (min-width: 769px) {
   .menubtn {
     display: none;

@@ -65,6 +65,8 @@ const Locations = () => {
           {cardData.map((data, key) => (
                   <CardComp key={key} {...data} index={key} />
                 ))}
+
+                
           </div>
         </div>
       </div>

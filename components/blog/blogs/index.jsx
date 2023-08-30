@@ -10,8 +10,8 @@ const Blogs = () => {
         <span className="text-[#295DA7]"> Elevate your revenue with </span>Socialprofit.io
       </h1>
       <div className="flex lg:py-22 py-10 lg:flex-row flex-col gap-10">
-       <div className="w-2/3"> <AllBlogs/></div>
-       <div className="w-2/6"> <BlogSidebar/></div>
+       <div className="lg:w-2/3 w-full"> <AllBlogs/></div>
+       <div className="lg:w-2/6 w-full"> <BlogSidebar/></div>
       </div>
     </div>
   );

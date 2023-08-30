@@ -45,13 +45,13 @@ const CardComp = (props) => {
   const { image, title, date, desc, link, index } = props;
   return (
     <div className="w-full flex md:flex-row flex-col even:bg-white odd:bg-[#D3D3D3] even:border-b-2 border-[#33333333] even:border-0 mb-11">
-      <div className="relative ">
+      <div className="relative md:w-1/2 w-full">
         <Image
           src={image}
           width={353}
           height={346}
           alt={image}
-          className="min-w-[353px] min-h-[346px] object-cover"
+          className="xl:min-w-[353px] xl:min-h-[346px] w-full h-full min-h-[240px] object-cover"
         />
         <div className="flex absolute bottom-0 justify-between w-full bg-[#33333380] py-2 px-3 text-[#fff]">
           <p className="w-1/2 flex items-center text-base gap-1">
@@ -74,7 +74,7 @@ const CardComp = (props) => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-center py:[69px] px-[44px]">
+      <div className="md:w-1/2 w-full flex flex-col justify-center lg:py:[69px] py-5 lg:px-[44px] px-5">
         <h3 className="sm:text-3xl text-xl sm:leading-9 leading-none font-semibold text-[#333]">
           {title}
         </h3>

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import CountUp from "@/components/common/CountUp";
+import CountUp from "../../common/CountUp";
 
 const cardData = [
   {

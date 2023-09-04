@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
@@ -21,9 +22,9 @@ const CookiesLess = () => {
           className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center text-[#295DA7] pt-[69px]"
         >
           Show the cookieless
-          <span className="text-black "> future who’s boss.</span>
+          <span className="text-black dark:text-white"> future who’s boss.</span>
         </motion.h1>
-        <motion.p className="sm:text-2xl text-[#333333] text-[24px] leading-8 font-medium text-center">
+        <motion.p className="sm:text-2xl text-[#333333] dark:text-white text-[24px] leading-8 font-medium text-center">
           Access the Socialprofit Collective
         </motion.p>
       </div>
@@ -40,8 +41,8 @@ const CookiesLess = () => {
                 hidden: { opacity: 0, x: 50 },
                 visible,
               }}
-              className="text-base font-normal leading-[21px] mb-[59px]"
-            >
+              className="text-base font-normal leiiokhfggrgfghfdhfdading-[21px] mb-[59px]"
+            >jhhhggfrdg
               Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
               Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
               ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. <br />{" "}

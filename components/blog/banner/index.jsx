@@ -30,7 +30,7 @@ const cardVariantsRight = {
 const Banner = () => {
   return (
     <>
-      <div className="bg-[#D3D3D3] w-full sm:py-36 py-10 xl:px-0 px-5">
+      <div className="bg-[#D3D3D3] dark:bg-black w-full sm:pb-36 sm:pt-14 py-10 xl:px-0 px-5 relative ">
         <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col-reverse justify-around ">
           <div className="lg:w-1/2 w-full ">
             <motion.div
@@ -39,7 +39,7 @@ const Banner = () => {
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
             >
-              <motion.h1
+               <motion.h1
                 //  variants={cardVariantsLeft}
                 className="font-bold sm:text-[64px] text-[30px] sm:pb-5 pb-3  capitalize"
               >
@@ -49,7 +49,7 @@ const Banner = () => {
 
               <motion.p
                 //  variants={cardVariantsLeft}
-                className="text-base text-[#333333] sm:pb-12 pb-5"
+                className="text-base text-[#333333] sm:pb-12 pb-5 dark:text-white"
               >
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
@@ -65,7 +65,7 @@ const Banner = () => {
               >
                 <motion.button
                   //  variants={cardVariantsLeft}
-                  className="border-2 border-s-[21px] px-9 py-4 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold uppercase"
+                  className="border-2 border-s-[21px] px-9 py-4 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold uppercase dark:text-black"
                 >
                   More details
                 </motion.button>
@@ -94,8 +94,9 @@ const Banner = () => {
       <img
         src="images/grey_wave.png"
         alt="waves"
-        className="w-full xl:mt-0 mt-[-5px]"
+        className="w-full xl:mt-0 mt-[-5px] dark:hidden"
       />
+    
     </>
   );
 };

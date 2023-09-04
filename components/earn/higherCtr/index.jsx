@@ -35,10 +35,10 @@ const HigherCTR = () => {
       <img
         src="/images/grey_wave.png"
         alt="upper wave"
-        className="w-full"
-        style={{ transform: "rotateX(180deg)" }}
+        className="w-full dark:hidden"
+        style={{ transform: "rotateX(180deg) " }}
       />
-      <div className="bg-[#D3D3D3] w-full py-5">
+      <div className="bg-[#D3D3D3] dark:bg-black w-full py-5">
         <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col xl:px-0 px-5 py-5 items-center lg:gap-32 gap-10">
           <div className="lg:w-1/2 w-full">
             <motion.div
@@ -71,7 +71,7 @@ const HigherCTR = () => {
               </motion.p>
               <motion.button
                 //  variants={cardVariantsLeft}
-                className="border-2 border-s-[21px] px-9 py-4 mt-8 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold"
+                className="border-2 border-s-[21px] px-9 py-4 mt-8 border-[#1F57A1] bg-[#E7E7E7] dark:text-black rounded-[5px] font-semibold"
               >
                 DOWNLOAD NOW
               </motion.button>
@@ -79,7 +79,7 @@ const HigherCTR = () => {
           </div>
           <div className="lg:w-1/2 w-full">
             <motion.div
-              className="card-container"
+              className="card-container dark:bg-white dark:rounded-xl"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
@@ -95,7 +95,7 @@ const HigherCTR = () => {
           </div>
         </div>
       </div>
-      <img src="/images/grey_wave.png" alt="upper wave" className=" w-full" />
+      <img src="/images/grey_wave.png" alt="upper wave" className=" w-full dark:hidden" />
     </>
   );
 };

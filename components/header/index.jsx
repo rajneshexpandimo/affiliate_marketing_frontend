@@ -59,60 +59,69 @@ const Header = () => {
   return (
     <>
       <div className="header w-full">
-        <div className="top_header bg-[#D3D3D3] m-hide">
-          <div className="md:max-w-[1300px] w-full mx-auto flex justify-between py-3 xl:px-0 px-5">
+        <div className="top_header bg-[#D3D3D3] dark:bg-[#2727276e] m-hide">
+          <div className="md:max-w-[1300px] w-full mx-auto flex justify-between py-3 2xl:px-0 xl:px-4 px-5">
             <div className="social_icons flex gap-3">
-              <Image
+          <button className="dark:bg-white dark:p-2">
+          <Image
                 src="/icons/tiktok.svg"
                 alt="social_icon"
                 width="17"
                 height="17"
               />
+          </button>
+          <button className="dark:bg-white dark:p-2">
               <Image
                 src="/icons/insta.svg"
                 alt="social_icon"
                 width="17"
                 height="17"
               />
+              </button>
+              <button className="dark:bg-white dark:p-2">
               <Image
                 src="/icons/twitter.svg"
                 alt="social_icon"
                 width="17"
                 height="17"
               />
+              </button>
+              <button className="dark:bg-white dark:p-2">
               <Image
                 src="/icons/linkedIn.svg"
                 alt="social_icon"
                 width="17"
                 height="17"
               />
+              </button>
             </div>
             <div className="login">
-              <Link href={"/"}>Login</Link>
+              <Link href={"/"} className="">Login</Link>
             </div>
           </div>
         </div>
-        <div className="main_header">
-          <div className="md:max-w-[1300px] w-full mx-auto flex justify-between items-center xl:px-0 px-5">
+        <div className="main_header dark:bg-black">
+          <div className="md:max-w-[1300px] w-full mx-auto flex justify-between items-center 2xl:px-0 xl:px-4 px-5 py-3">
             <div className="logo md:w-1/6 w-[30%]">
               <Link href={"/"}>
                 <Image
-                  src="/icons/Logo.svg"
+                  src="/images/socialProfit_logo.png"
                   alt=""
                   width={148}
                   height={127}
-                  className="2xl:w-auto "
+                  className="2xl:w-auto bg-transparent"
                 />
               </Link>
             </div>
 
-            <div className="main_navbar w-7/12 md:block flex justify-end items-center">
+            <div className="main_navbar w-7/12 md:block flex justify-end items-center bg-transparent">
               <Menu
                 onClick={onClick}
                 selectedKeys={[current]}
                 mode="horizontal"
                 items={items}
-                className="bigmenu justify-center border-none 2xl:text-2xl md:text-lg font-medium xl:gap-7 gap-3"
+                itemHoverColor="white"
+                className="bigmenu justify-center border-none 2xl:text-2xl md:text-lg font-medium xl:gap-7 gap-3 bg-transparent dark:text-white"
               />
               <Dropdown
                 menu={{

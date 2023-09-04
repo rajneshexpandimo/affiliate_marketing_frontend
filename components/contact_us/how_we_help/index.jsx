@@ -44,8 +44,8 @@ const HowWeHelp = () => {
   return (
     <>
       <div className="w-full py-5">
-        <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 md:pt-[90px] pt-4">
-          <h1 className="font-bold sm:text-[64px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center capitalize text-[#333]">
+        <div className="md:max-w-[1300px] w-full mx-auto 2xl:px-0 xl:px-4 px-5 md:pt-[90px] pt-4">
+          <h1 className="font-bold sm:text-[64px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center capitalize text-[#333] dark:text-white">
             <span className="text-[#295DA7]"> How can we help  </span>you right now?
           </h1>
           <p className="text-base text-center  lg:max-w-[1140px] mx-auto">

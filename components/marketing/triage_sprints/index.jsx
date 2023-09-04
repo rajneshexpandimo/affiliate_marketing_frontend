@@ -2,6 +2,7 @@ import CountUp from "../../common/CountUp";
 import { Divider } from "antd";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const triageSprintData = [
   {
@@ -37,19 +38,36 @@ const counterData = [
     suffix: "TB+",
   },
 ];
-
+const cardVariantsdown = {
+  offscreen: {
+    opacity: 0,
+    y: 50,
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
 const TriageSprint = () => {
   return (
     <>
       <img
         src="/images/grey_wave.png"
         alt="upper wave"
-        className="w-full mb-[-3px]"
+        className="w-full mb-[-3px] dark:hidden"
         style={{ transform: "rotateX(180deg)" }}
       />
-      <div className="bg-[#D3D3D3] w-full pt-5 2xl:pb-[200px] 2xl:mb-[-180px] pb-[150px] mb-[-115px] ">
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+        className="bg-[#D3D3D3] dark:bg-black w-full pt-5 2xl:pb-[200px] 2xl:mb-[-180px] pb-[150px] mb-[-115px] "
+      >
         <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 md:pt-[90px] pt-4 text-center">
-          <h1 className="font-bold sm:text-[50px] text-2xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center capitalize text-[#333]">
+          <h1 className="font-bold sm:text-[50px] text-2xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center capitalize text-[#333] dark:text-white">
             Triage rapidly solves a particular marketing or
             <span className="text-[#1F57A1]">
               {" "}
@@ -60,20 +78,20 @@ const TriageSprint = () => {
           <Divider className="md:!text-[40px] font-semibold !border-[#1F57A1]">
             How do Triage sprints work?
           </Divider>
-          <div className="flex xl:flex-row flex-col xl:gap-16 gap-4 mt-12 mb-20">
+          <motion.div  className="flex xl:flex-row flex-col xl:gap-16 gap-4 mt-12 mb-20">
             {triageSprintData.map((data, key) => (
               // console.log(data)
               <TriageSprintComp key={key} {...data} index={key} />
             ))}
-          </div>
+          </motion.div>
 
-          <div className="counter bg-blue border-dashed border-white border-[3px] rounded-[50px] flex sm:flex-row flex-col sm:gap-0 gap-9 justify-evenly py-7">
+          <motion.div className="counter bg-blue border-dashed border-white border-[3px] rounded-[50px] flex sm:flex-row flex-col sm:gap-0 gap-9 justify-evenly py-7">
             {counterData.map((data, key) => (
               <CounterComp key={key} {...data} index={key} />
             ))}
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
@@ -81,7 +99,7 @@ const TriageSprint = () => {
 const TriageSprintComp = (props) => {
   const { image, title, desc } = props;
   return (
-    <div className="inline-block rounded-[25px] border-[3px] border-[#fff] bg-white text-center px-7 py-[55px]  ">
+    <motion.div className="inline-block rounded-[25px] border-[3px] border-[#fff] bg-white text-center px-7 py-[55px]  ">
       <div className="border-2 border-dashed border-[#1F57A1] rounded-full p-4 w-auto inline-block">
         <Image
           src={image}
@@ -95,19 +113,19 @@ const TriageSprintComp = (props) => {
         {title}
       </h3>
       <p className="text-[#000] text-base text-center capitalize">{desc}</p>
-    </div>
+    </motion.div>
   );
 };
 
 const CounterComp = (props) => {
   const { count, desc, suffix, index } = props;
   return (
-    <div className="md:w-1/3 w-full border-r-2 border-white last:border-r-0">
+    <motion.div className="md:w-1/3 w-full border-r-2 border-white last:border-r-0">
       <h3 className="md:text-[40px] text-xl md:leading-[48px] leading-normal text-white font-semibold">
         <CountUp end={count} /> {suffix}
       </h3>
       <p className="text-base text-white">Developers Worldwide</p>
-    </div>
+    </motion.div>
   );
 };
 export default TriageSprint;

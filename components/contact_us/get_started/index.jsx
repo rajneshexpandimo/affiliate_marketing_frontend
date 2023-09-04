@@ -1,7 +1,21 @@
 import Link from "next/link";
 import React from "react";
 import { Button, Checkbox, Form, Input, InputNumber } from "antd";
+import { motion } from "framer-motion";
 
+const cardVariantsTop = {
+  offscreen: {
+    opacity: 0,
+    y: -50,
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
 /* eslint-disable no-template-curly-in-string */
 const validateMessages = {
   required: "${label} is required!",
@@ -24,17 +38,22 @@ const GetStarted = () => {
   };
   return (
     <>
-      <div className="bg-[#d3d3d3]">
-        <div className="md:max-w-[1300px] w-full mx-auto pt-2 pb-20 xl:px-0 lg:px-3 px-6">
-          <h1 className="font-bold sm:text-[64px] text-2xl sm:pb-5 pb-4 text-[#333] md:leading-[88px] leading-normal text-center">
+      <div className="bg-[#d3d3d3] dark:bg-black relative after:content-[''] after:bg-[url('/icons/three_bubbles.svg')] after:w-[172px] after:h-[352px] after:absolute after:right-0 after:top-0 after:bg-no-repeat after:bg-contain before:content-[''] before:bg-[url('/icons/three_bubbles.svg')] before:w-[172px] before:h-[352px] before:absolute before:left-0 before:bottom-0 before:bg-no-repeat before:bg-contain before:rotate-180">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          className="md:max-w-[1300px] w-full mx-auto pt-10 pb-20 2xl:px-0 xl:px-3 lg:px-3 px-6 relative after:content-[''] after:bg-[url('/icons/singlebubble.png')] after:w-[75px] after:h-[75px] after:absolute after:left-0 after:top-[5%] after:bg-no-repeat after:bg-contain"
+        >
+          <motion.h1  className="font-bold sm:text-[64px] text-2xl sm:pb-5 pb-4 text-[#333] dark:text-white md:leading-[88px] leading-normal text-center">
             Get
             <span className="text-[#295DA7]"> Started </span>
-          </h1>
+          </motion.h1>
           <p className="text-base text-center">
             Fill out the form and one of our representatives will contact you
             within one business day.
           </p>
-          <div className="flex lg:flex-row flex-col xl:gap-24 md:gap-5 gap-5 md:pt-[70px] pt-5">
+          <div className="flex lg:flex-row flex-col 2xl:gap-24 xl:gap-16 md:gap-5 gap-5 md:pt-[70px] pt-5 ">
             <div className="bg-white rounded-[50px] md:py-24 py-10 md:px-20 px-5 lg:w-1/2 w-full">
               <h2 className="md:text-[40px] text-2xl leading-[53px] text-[#333] font-semibold text-center">
                 Contact Us Directly
@@ -111,7 +130,7 @@ const GetStarted = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-[#1F57A1] rounded-[50px] md:pt-24 md:pb-7  py-10 md:px-[64px] px-5 lg:w-1/2 w-full contact_us_form">
+            <div className="bg-[#1F57A1] rounded-[50px] md:pt-24 md:pb-7  py-10 md:px-[64px] px-5 lg:w-1/2 w-full contact_us_form relative 2xl:after:content-[''] 2xl:after:bg-[url('/icons/singlebubble.png')] after:w-[75px] after:h-[75px] after:absolute 2xl:after:right-[-12%] after:bottom-[5%] after:bg-no-repeat after:bg-contain ">
               <h2 className="md:text-[40px] text-2xl leading-[53px] text-white font-semibold text-center mb-10">
                 Send A Message
               </h2>
@@ -126,58 +145,89 @@ const GetStarted = () => {
                   <div className="flex md:flex-row flex-col justify-between md:gap-8">
                     <Form.Item
                       name="firstname"
-                      label={<label className="text-white uppercase text-base font-semibold">First Name</label>}
+                      label={
+                        <label className="text-white uppercase text-base font-semibold">
+                          First Name
+                        </label>
+                      }
                       rules={[{ required: true }]}
                       className="sm:mb-6 mb-2"
                     >
-                      <Input className="bg-[#FFFFFF80] border-transparent py-[10px] rounded-[10px]"/>
+                      <Input className="bg-[#FFFFFF80] border-transparent py-[10px] rounded-[10px]" />
                     </Form.Item>
                     <Form.Item
                       name="lastname"
-                      label={<label className="text-white uppercase text-base font-semibold">Last Name</label>}
+                      label={
+                        <label className="text-white uppercase text-base font-semibold">
+                          Last Name
+                        </label>
+                      }
                       rules={[{ required: true }]}
                       className="sm:mb-6 mb-2"
                     >
-                      <Input  className="bg-[#FFFFFF80] border-transparent py-[10px] rounded-[10px]"/>
+                      <Input className="bg-[#FFFFFF80] border-transparent py-[10px] rounded-[10px]" />
                     </Form.Item>
                   </div>
                   <div className="lex md:flex-row flex-col justify-between gap-5">
                     <Form.Item
                       name="email"
-                      label={<label className="text-white uppercase text-base font-semibold">Email Address</label>}
+                      label={
+                        <label className="text-white uppercase text-base font-semibold">
+                          Email Address
+                        </label>
+                      }
                       rules={[{ type: "email", required: true }]}
                       className="sm:mb-6 mb-2"
                     >
-                      <Input  className="bg-[#FFFFFF80] border-transparent py-[10px] rounded-[10px]"/>
+                      <Input className="bg-[#FFFFFF80] border-transparent py-[10px] rounded-[10px]" />
                     </Form.Item>
                     <Form.Item
                       name="phone"
-                      label={<label className="text-white uppercase text-base font-semibold">Phone</label>}
+                      label={
+                        <label className="text-white uppercase text-base font-semibold">
+                          Phone
+                        </label>
+                      }
                       rules={[{ required: true }]}
                       className="sm:mb-6 mb-2"
                     >
-                      <Input  className="bg-[#FFFFFF80] border-transparent py-[10px] rounded-[10px]"/>
+                      <Input className="bg-[#FFFFFF80] border-transparent py-[10px] rounded-[10px]" />
                     </Form.Item>
                   </div>
 
-                  <Form.Item name="message" label={<label className="text-white uppercase text-base font-semibold  mb-0">Your Message</label>}>
-                    <Input.TextArea  rows={7} className="bg-[#FFFFFF80] border-transparent py-[10px] rounded-[10px] mb-0" />
+                  <Form.Item
+                    name="message"
+                    label={
+                      <label className="text-white uppercase text-base font-semibold  mb-0">
+                        Your Message
+                      </label>
+                    }
+                  >
+                    <Input.TextArea
+                      rows={7}
+                      className="bg-[#FFFFFF80] border-transparent py-[10px] rounded-[10px] mb-0"
+                    />
                   </Form.Item>
                   <Checkbox className="text-white text-sm capitalize rounded-none pt-4 pb-8">
                     I agree to the{" "}
                     <Link href={"/terms_and_condition"} className="underline">
-                      Terms of use 
+                      Terms of use
                     </Link>
-                     And 
+                    And
                     <Link href={"/privacy_policy"} className="underline">
                       privacy policy
                     </Link>
                   </Checkbox>
                   <Checkbox className="text-white text-sm capitalize rounded-none">
-                  I agree to join our Text Alerts or Email Alerts for special offers!
+                    I agree to join our Text Alerts or Email Alerts for special
+                    offers!
                   </Checkbox>
                   <Form.Item>
-                    <Button type="primary" htmlType="submit" className="bg-white text-[#1F57A1] text-xl font-semibold uppercase w-full mt-12 min-h-[46px] rounded-none">
+                    <Button
+                      type="primary"
+                      htmlType="submit"
+                      className="bg-white text-[#1F57A1] text-xl font-semibold uppercase w-full mt-12 min-h-[46px] rounded-none"
+                    >
                       Contact us
                     </Button>
                   </Form.Item>
@@ -185,9 +235,9 @@ const GetStarted = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <img src="images/grey_wave.png" alt="waves" className="w-full xl:mt-0" />
+      <img src="images/grey_wave.png" alt="waves" className="w-full xl:mt-0 dark:hidden" />
     </>
   );
 };

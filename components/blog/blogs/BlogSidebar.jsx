@@ -93,7 +93,7 @@ const BlogSidebar = () => {
           <Calendar
             value={value}
             onChange={onDateChange}
-            className="w-full flex justify-center custom_calender"
+            className="w-full flex justify-center custom_calender dark:text-black"
           />
         </div>
       </div>
@@ -116,13 +116,13 @@ const BlogSidebar = () => {
           Tags
         </h4>
         <div className="flex flex-wrap gap-4">
-          <p className="bg-[#D9D9D9] text-base font-light px-2 py-1 capitalize rounded-[4px]">
+          <p className="bg-[#D9D9D9] text-base font-light px-2 py-1 capitalize rounded-[4px] dark:bg-black">
             # affiliate forex
           </p>
-          <p className="bg-[#D9D9D9] lighttext-base font-light px-2 py-1 capitalize rounded-[4px]">
+          <p className="bg-[#D9D9D9] lighttext-base font-light px-2 py-1 capitalize rounded-[4px] dark:bg-black">
             # broken affiliate
           </p>
-          <p className="bg-[#D9D9D9] text-base font-light px-2 py-1 capitalize rounded-[4px]">
+          <p className="bg-[#D9D9D9] text-base font-light px-2 py-1 capitalize rounded-[4px] dark:bg-black">
             # affiliate program forex
           </p>
         </div>

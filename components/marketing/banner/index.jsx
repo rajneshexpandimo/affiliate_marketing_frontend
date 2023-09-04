@@ -30,7 +30,7 @@ const cardVariantsRight = {
 const Banner = () => {
   return (
     <>
-      <div className="bg-[#D3D3D3] w-full sm:py-20 py-10 xl:px-0 px-5">
+      <div className="bg-[#D3D3D3] dark:bg-black w-full sm:pb-20 sm:pt-14 py-10 xl:px-0 px-5 relative after:content-[''] after:bg-[url('/icons/three_bubbles.svg')] after:w-[172px] after:h-[352px] after:absolute after:right-0 after:top-0 after:bg-no-repeat after:bg-contain">
         <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col-reverse justify-around items-center">
           <div className="lg:w-1/2 w-full ">
             <motion.div
@@ -49,7 +49,7 @@ const Banner = () => {
 
               <motion.p
                 //  variants={cardVariantsLeft}
-                className="text-base text-[#333333] sm:pb-12 pb-5"
+                className="text-base text-[#333333] dark:text-white sm:pb-12 pb-5"
               >
              We are a web3 native marketing team helping projects with everything from go-to-market strategy to authority building and web3 growth initiatives.
               </motion.p>
@@ -60,7 +60,7 @@ const Banner = () => {
               >
                 <motion.button
                   //  variants={cardVariantsLeft}
-                  className="border-2 border-s-[21px] px-9 py-4 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold uppercase"
+                  className="border-2 border-s-[21px] px-9 py-4 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold uppercase dark:text-black"
                 >
                  Get a proposal
                 </motion.button>
@@ -89,7 +89,7 @@ const Banner = () => {
       <img
         src="images/grey_wave.png"
         alt="waves"
-        className="w-full xl:mt-0 mt-[-5px]"
+        className="w-full xl:mt-0 mt-[-5px] dark:hidden"
       />
     </>
   );

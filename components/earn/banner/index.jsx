@@ -30,7 +30,7 @@ const cardVariantsRight = {
 const Banner = () => {
   return (
     <>
-      <div className="bg-[#D3D3D3] w-full sm:py-36 py-10 xl:px-0 px-5">
+      <div className="bg-[#D3D3D3] dark:bg-black w-full sm:py-36 py-10 xl:px-0 px-5">
           <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col-reverse justify-around ">
             <div className="lg:w-1/2 w-full ">
             <motion.div
@@ -48,7 +48,7 @@ const Banner = () => {
 
               <motion.p
                 //  variants={cardVariantsLeft}
-                className="sm:text-2xl text-[18px] text-[#333333] sm:pb-12 pb-5"
+                className="sm:text-2xl text-[18px] text-[#333333] dark:text-white sm:pb-12 pb-5"
               >
                 Magic Boost is a Program Where You can Find Incredible Payouts
               </motion.p>
@@ -59,7 +59,7 @@ const Banner = () => {
               >
               <motion.button
                 //  variants={cardVariantsLeft}
-                className="border-2 border-s-[21px] px-9 py-4 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold"
+                className="border-2 border-s-[21px] px-9 py-4 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold dark:text-black"
               >
                 TRY IT FREE
               </motion.button>
@@ -71,7 +71,7 @@ const Banner = () => {
         */}
             <div className="lg:w-1/2 w-full">
             <motion.div
-              className="card-container"
+              className="card-container "
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
@@ -85,7 +85,7 @@ const Banner = () => {
             </div>
           </div>
       </div>
-      <img src="images/grey_wave.png" alt="waves" className="w-full xl:mt-0 mt-[-5px]" />
+      <img src="images/grey_wave.png" alt="waves" className="w-full xl:mt-0 mt-[-5px] dark:hidden" />
     </>
   );
 };

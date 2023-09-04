@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
+    "@emotion/react": "^11.11.1",
+    "@natscale/react-calendar": "^0.0.0-beta.26",
     "antd": "^5.7.3",
     "autoprefixer": "10.4.14",
     "countup.js": "^2.7.0",
@@ -17,6 +19,7 @@
     "eslint-config-next": "13.4.12",
     "framer-motion": "^10.15.0",
     "next": "13.4.12",
+    "next-themes": "^0.2.1",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-countup": "^6.4.2",
@@ -24,6 +27,11 @@
     "react-icons": "^4.10.1",
     "react-intersection-observer": "^9.5.2",
     "styled-components": "^6.0.5",
-    "tailwindcss": "3.3.3"
+    "tailwindcss": "3.3.3",
+    "theme-ui": "^0.16.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21"
   }
 }

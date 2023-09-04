@@ -35,10 +35,10 @@ const TrustThePros = () => {
     <img
     src="/images/grey_wave.png"
     alt="upper wave"
-    className=" w-full"
+    className=" w-full dark:hidden"
     style={{ transform: "rotateX(180deg)" }}
   />
-  <div className="bg-[#D3D3D3] w-full py-5">
+  <div className="bg-[#D3D3D3] dark:bg-black w-full py-5">
     <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 pt-5 sm:my-10">
       <motion.h1
         className="font-bold sm:text-5xl text-[30px] sm:leading-[66px] leading-normal text-center"
@@ -72,7 +72,7 @@ const TrustThePros = () => {
   <img
     src="/images/grey_wave.png"
     alt="upper wave"
-    className="mb-[-20px] w-full"
+    className="mb-[-20px] w-full dark:hidden"
   />
 </>
   )

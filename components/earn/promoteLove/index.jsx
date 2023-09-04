@@ -23,10 +23,10 @@ const PromoteLove = () => {
       <img
         src="/images/grey_wave.png"
         alt="upper wave"
-        className="w-full"
+        className="w-full dark:hidden"
         style={{ transform: "rotateX(180deg)" }}
       />
-      <div className="bg-[#D3D3D3] w-full py-5">
+      <div className="bg-[#D3D3D3] dark:bg-black w-full py-5">
         <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 pt-[90px] ">
           <h1 className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center">
             <span className="text-[#295DA7]"> Promote </span>What You Love
@@ -160,7 +160,7 @@ const PromoteLove = () => {
           </motion.div>
         </div>
       </div>
-      <img src="/images/grey_wave.png" alt="upper wave" className=" w-full" />
+      <img src="/images/grey_wave.png" alt="upper wave" className=" w-full dark:hidden" />
     </>
   );
 };

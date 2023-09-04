@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import CountUp from "@/components/common/CountUp";
+import CountUp from "../../common/CountUp";
 
 const cardVariants = {
   offscreen: {
@@ -46,12 +46,12 @@ const Locations = () => {
       <img
         src="/images/grey_wave.png"
         alt="upper wave"
-        className="w-full mb-[-5px]"
+        className="w-full mb-[-5px] dark:hidden"
         style={{ transform: "rotateX(180deg)" }}
       />
-      <div className="bg-[#D3D3D3] w-full pt-5 xl:pb-32 pb-8">
-        <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 md:pt-[90px] pt-4">
-          <h1 className="font-bold sm:text-[64px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center capitalize text-[#333]">
+      <div className="bg-[#D3D3D3] dark:bg-black w-full pt-5 xl:pb-32 pb-8">
+        <div className="md:max-w-[1300px] w-full mx-auto 2xl:px-0 xl:px-4 px-5 md:pt-[90px] pt-4">
+          <h1 className="font-bold sm:text-[64px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center capitalize text-[#333] dark:text-white">
             Join us and create
             <span className="text-[#295DA7]"> your own success </span>
           </h1>
@@ -70,7 +70,7 @@ const Locations = () => {
           </div>
         </div>
       </div>
-      <img src="/images/grey_wave.png" alt="upper wave" className=" w-full" />
+      <img src="/images/grey_wave.png" alt="upper wave" className=" w-full dark:hidden" />
     </>
   );
 };
@@ -87,7 +87,7 @@ const CardComp = (props) => {
             </p>
             <button className="bg-blue rounded-[10px] min-w-[166px] min-h-[49px] text-white text-base mt-6" onClick={link}>Read More</button>
            </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.4393982181145!2d-71.05788042405935!3d42.35447417119349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708178ea0e83%3A0x50c89534c1717af0!2s100%20High%20St%2C%20Boston%2C%20MA%2002110%2C%20USA!5e0!3m2!1sen!2sin!4v1692876839280!5m2!1sen!2sin" width="424" height="223" allowfullscreen="" loading="lazy" disableDefaultUI="true" referrerpolicy="no-referrer-when-downgrade" className="absolute bottom-[-32%] z-[-1] xl:block hidden"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.4393982181145!2d-71.05788042405935!3d42.35447417119349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708178ea0e83%3A0x50c89534c1717af0!2s100%20High%20St%2C%20Boston%2C%20MA%2002110%2C%20USA!5e0!3m2!1sen!2sin!4v1692876839280!5m2!1sen!2sin" width="410" height="223" allowfullscreen="" loading="lazy" disableDefaultUI="true" referrerpolicy="no-referrer-when-downgrade" className="absolute bottom-[-32%] z-[-1] xl:block hidden"></iframe>
       </div>
     );
   };

@@ -30,7 +30,7 @@ const cardVariantsRight = {
 const HeroSection = () => {
   return (
     <>
-      <div className="bg-[#D3D3D3] w-full sm:py-36 py-10 xl:px-0 px-5">
+      <div className="bg-[#D3D3D3] dark:bg-black w-full sm:py-36 py-10 xl:px-0 px-5">
           <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col-reverse justify-between ">
             <div className="lg:w-1/2 w-full ">
             <motion.div
@@ -60,7 +60,7 @@ const HeroSection = () => {
               >
               <motion.button
                 //  variants={cardVariantsLeft}
-                className="border-2 border-s-[21px] p-4 border-[#1F57A1] bg-[#E7E7E7] rounded-[5px] font-semibold"
+                className="border-2 border-s-[21px] p-4 border-[#1F57A1] bg-[#E7E7E7] dark:text-black rounded-[5px] font-semibold"
               >
                 GET STARTED
               </motion.button>
@@ -86,7 +86,7 @@ const HeroSection = () => {
             </div>
           </div>
       </div>
-      <img src="images/grey_wave.png" alt="waves" className="w-full xl:mt-0 mt-[-5px]" />
+      <img src="images/grey_wave.png" alt="waves" className="w-full xl:mt-0 mt-[-5px] dark:hidden" />
     </>
   );
 };

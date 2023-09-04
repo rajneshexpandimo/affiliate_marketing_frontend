@@ -22,10 +22,10 @@ const WhyChooses = () => {
       <img
         src="/images/grey_wave.png"
         alt="upper wave"
-        className="w-full"
+        className="w-full dark:hidden"
         style={{ transform: "rotateX(180deg)" }}
       />
-      <div className="bg-[#D3D3D3] w-full py-5">
+      <div className="bg-[#D3D3D3] dark:bg-black w-full py-5">
         <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 pt-5 ">
           <h1
             className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center"
@@ -47,7 +47,7 @@ const WhyChooses = () => {
           className="flex lg:py-24 py-10 justify-between lg:flex-row flex-col">
             <div className="flex lg:w-1/3 w-full justify-between flex-col lg:items-start items-center lg:gap-0 gap-5">
               <div className="bg-[#1F57A1] p-3 rounded-full flex flex-row items-center gap-3 profit_list profit_list_1 relative sm:max-w-[392px] sm:min-w-[392px]  w-full">
-                <div className="bg-white p-2 rounded-full min-w-[78px] min-h-[78px] font-bold flex items-center justify-center text-4xl">
+                <div className="bg-white dark:text-black first-letter: p-2 rounded-full min-w-[78px] min-h-[78px] font-bold flex items-center justify-center text-4xl">
                   1
                 </div>
                 <p className="text-white text-base">
@@ -56,7 +56,7 @@ const WhyChooses = () => {
                 </p>
               </div>
               <div className="bg-[#1F57A1] p-3 rounded-full flex flex-row items-center gap-3 profit_list profit_list_2 relative  sm:max-w-[392px] sm:min-w-[392px]  w-full">
-                <div className="bg-white p-2 rounded-full min-w-[78px] min-h-[78px] font-bold flex items-center justify-center text-4xl">
+                <div className="bg-white dark:text-black p-2 rounded-full min-w-[78px] min-h-[78px] font-bold flex items-center justify-center text-4xl">
                   2
                 </div>
                 <p className="text-white text-base">
@@ -80,7 +80,7 @@ const WhyChooses = () => {
             </div>
             <div className="lg:w-1/3 w-full flex flex-col justify-between lg:items-end items-center gap-5">
               <div className="bg-[#1F57A1] p-3 rounded-full flex lg:flex-row-reverse flex-row items-center gap-3 profit_list profit_list_3 relative  sm:max-w-[392px] sm:min-w-[392px  w-full">
-                <div className="bg-white p-2 rounded-full min-w-[78px] min-h-[78px] font-bold flex items-center justify-center text-4xl">
+                <div className="bg-white p-2 dark:text-black rounded-full min-w-[78px] min-h-[78px] font-bold flex items-center justify-center text-4xl">
                   3
                 </div>
                 <p className="text-white text-base lg:text-right text-left">
@@ -88,7 +88,7 @@ const WhyChooses = () => {
                 </p>
               </div>
               <div className="bg-[#1F57A1] p-3 rounded-full flex lg:flex-row-reverse flex-row items-center gap-3 profit_list profit_list_4 relative sm:max-w-[392px] sm:min-w-[392px] w-full">
-                <div className="bg-white p-2 rounded-full min-w-[78px] min-h-[78px] font-bold flex items-center justify-center text-4xl">
+                <div className="bg-white p-2 dark:text-black rounded-full min-w-[78px] min-h-[78px] font-bold flex items-center justify-center text-4xl">
                   4
                 </div>
                 <p className="text-white text-base lg:text-right text-left">

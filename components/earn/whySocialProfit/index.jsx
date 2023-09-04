@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion, useScroll, Variants } from "framer-motion";
-import CountUp from "@/components/common/CountUp";
+import CountUp from "../../common/CountUp";
 
 const cardData = [
   {

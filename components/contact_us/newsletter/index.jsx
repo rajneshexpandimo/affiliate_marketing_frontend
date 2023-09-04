@@ -14,8 +14,8 @@ const NewsLetter = () => {
     console.log("Finish:", values);
   };
   return (
-    <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 md:py-20 py-7">
-      <h2 className="font-bold sm:text-[64px] text-3xl pb-0 sm:pb-8 sm:leading-[66px] leading-normal text-center capitalize text-[#333]">
+    <div className="md:max-w-[1300px] w-full mx-auto 2xl:px-0 xl:px-4 px-5 md:py-20 py-7">
+      <h2 className="font-bold sm:text-[64px] text-3xl pb-0 sm:pb-8 sm:leading-[66px] leading-normal text-center capitalize text-[#333] dark:text-white">
         Sign Up for
         <span className="text-[#295DA7]"> Our Newsletters </span>
       </h2>
@@ -47,7 +47,7 @@ const NewsLetter = () => {
           </Form.Item>
           <div className="lg:absolute relative bottom-0 left-0">
             {" "}
-            <Checkbox className="text-[15px] text-[#333] rounded-none items-start">
+            <Checkbox className="text-[15px] text-[#333] dark:text-white rounded-none items-start">
             By checking this box, you confirm that you have read and are agreeing to our terms of use regarding the storage of the data submitted through this form.
             </Checkbox>
           </div>

@@ -1,8 +1,53 @@
 import React from "react";
 import Image from "next/image";
-import CountUp from "@/components/common/CountUp";
+import CountUp from "../../common/CountUp";
+import { motion } from "framer-motion";
+
+const cardVariantsdown = {
+  offscreen: {
+    opacity: 0,
+    y: 50,
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
 
 const cardData = [
+  {
+    userImage: "/images/user1.png",
+    name: "Affiliate",
+    earning: "36,563",
+  },
+  {
+    userImage: "/images/user1.png",
+    name: "Affiliate",
+    earning: "36,563",
+  },
+  {
+    userImage: "/images/user1.png",
+    name: "Affiliate",
+    earning: "36,563",
+  },
+  {
+    userImage: "/images/user1.png",
+    name: "Affiliate",
+    earning: "36,563",
+  },
+  {
+    userImage: "/images/user1.png",
+    name: "Affiliate",
+    earning: "36,563",
+  },
+  {
+    userImage: "/images/user1.png",
+    name: "Affiliate",
+    earning: "36,563",
+  },
   {
     userImage: "/images/user1.png",
     name: "Affiliate",
@@ -21,8 +66,8 @@ const cardData = [
 ];
 const ActiveAffiliate = () => {
   return (
-    <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 md:pt-[90px] md:pb-10 py-5">
-      <h1 className="font-bold sm:text-[64px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center capitalize text-[#333]">
+    <div className="md:max-w-[1300px] dark:bg-black w-full mx-auto xl:px-0 px-5 md:pt-[90px] md:pb-10 py-5">
+      <h1 className="font-bold sm:text-[64px] dark:text-white text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center capitalize text-[#333]">
         Most active affiliates
         <span className="text-[#295DA7]"> on SocialProfit.IO </span>
       </h1>
@@ -32,7 +77,7 @@ const ActiveAffiliate = () => {
         of resources, support, and exclusive offers from reputable, regulated
         brands.
       </p>
-      <div className="flex md:flex-row flex-col gap-10 my-12 lg:max-w-[1194px] mx-auto">
+      <div className="flex md:flex-row flex-col flex-wrap gap-10 my-12 lg:max-w-[1194px] mx-auto">
         {cardData.map((data, key) => (
           <CardComp key={key} {...data} index={key} />
         ))}
@@ -44,7 +89,10 @@ const ActiveAffiliate = () => {
 const CardComp = (props) => {
   const { userImage, name, earning } = props;
   return (
-    <div className="flex  w-full">
+    <motion.div className="md:w-[30%]  w-full" initial="offscreen"
+    whileInView="onscreen"
+    viewport={{ once: true, amount: 0.8 }}>
+      <motion.div variants={cardVariantsdown} className="flex">
    <div className="w-[25%] bg-[#1F57A1] min-w-[114px] min-h-[102]">
    <Image
         src={userImage}
@@ -60,7 +108,8 @@ const CardComp = (props) => {
         </h3>
         <p className="text-[#1F57A1] text-base text-center"> ${earning}</p>
       </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

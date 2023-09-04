@@ -37,6 +37,39 @@
 * {
   font-family: "Poppins", sans-serif !important;
 }
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
+}
+[data-theme='dark'] [data-hide-on-theme='dark'],
+[data-theme='light'] [data-hide-on-theme='light'] {
+  display: none !important;
+}
+.color_switch .ant-switch-handle::before {
+  border-radius: 2px !important;
+}
+.color_switch  span.ant-switch-inner {
+  border: 1px solid #fff;
+  border-radius: 2px !important;
+}
+.color_switch .ant-switch.ant-switch-checked {
+  background: transparent !important;
+}
+.color_switch  .ant-switch-handle {
+  top: 0px;
+  width: 14px !important;
+  height: 16px !important;
+  /* inset-inline-start: 0px !important; */
+}
+.color_switch .ant-switch .ant-switch-handle {
+  inset-inline-start: 0px;
+}
 .box-shadow {
   box-shadow: 0 0 10px 0 #0000002e;
 }
@@ -108,7 +141,7 @@
   width: 118px;
   background-repeat: no-repeat;
   transform: rotate(179deg);
-}
+ }
 /* .borderleft {
   border-left: 15px solid #f6b552;
   position: absolute;
@@ -216,6 +249,50 @@ label.ant-form-item-required::before {
 .blog_search .ant-input-search-button{
   border-radius: 20px !important;
   background-color: #1F57A1;
+}
+.custom_calender .rc_header {
+  align-items: center;
+}
+.custom_calender .rc {
+  width: 420px !important;
+  height: 310px !important;
+}
+.custom_calender .rc_header_label.rc_header_label-days-of-month {
+  background: #fff;
+  border-radius: 50px;
+  padding: 19px 0;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 5px;
+}
+.custom_calender .rc_header_nav.rc_header_nav-prev,
+.custom_calender .rc_header_nav.rc_header_nav-next {
+  background: #000;
+  color: #fff;
+  height: 21px !important;
+  width: 21px !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 50%;
+}
+.custom_calender  .rc_selected button {
+  background: #fff;
+  border-radius: 50%;
+  height: 100% !important;
+}
+.custom_calender  .rc_body-cell {
+  opacity: 0.5;
+}
+.custom_calender  .rc_body-cell.rc_active {
+  opacity: 1;
+}
+.custom_calender ul.rc_body-weekdays li span:first-letter {
+  font-size: 14px !important;
+  font-weight: 700;
+}
+ul.rc_body-weekdays li span {
+ font-size: 0;
 }
 @media (min-width: 769px) {
   .menubtn {

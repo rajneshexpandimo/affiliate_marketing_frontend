@@ -1,7 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import CountUp from "@/components/common/CountUp";
+import CountUp from "../../common/CountUp";
+
+const cardVariantsdown = {
+  offscreen: {
+    opacity: 0,
+    y: 50,
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
 
 const cardVariants = {
   offscreen: {
@@ -38,6 +52,7 @@ const cardData = [
     desc: "We do the work of detecting your users’ location, language, and device",
     link: "/",
   },
+  
 ];
 
 const JoinUs = () => {
@@ -46,12 +61,14 @@ const JoinUs = () => {
       <img
         src="/images/grey_wave.png"
         alt="upper wave"
-        className="w-full mb-[-5px]"
+        className="w-full mb-[-5px] dark:hidden"
         style={{ transform: "rotateX(180deg)" }}
       />
-      <div className="bg-[#D3D3D3] w-full py-5">
+      <motion.div className="bg-[#D3D3D3] dark:bg-black w-full py-5" initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}>
         <div className="md:max-w-[1300px] w-full mx-auto xl:px-0 px-5 md:pt-[90px] pt-4">
-          <h1 className="font-bold sm:text-[64px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center capitalize text-[#333]">
+          <h1 className="font-bold dark:text-white sm:text-[64px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-center capitalize text-[#333]">
             Join us and create
             <span className="text-[#295DA7]"> your own success </span>
           </h1>
@@ -61,14 +78,14 @@ const JoinUs = () => {
             of using Lorem Ipsum is that it has a more-or-less normal
             distribution
           </p>
-          <div className="flex lg:flex-row flex-col xl:gap-16 gap-4 my-12">
+          <motion.div variants={cardVariantsdown} className="flex lg:flex-row flex-col xl:gap-16 gap-4 my-12">
           {cardData.map((data, key) => (
                   <CardComp key={key} {...data} index={key} />
                 ))}
-          </div>
+          </motion.div>
         </div>
-      </div>
-      <img src="/images/grey_wave.png" alt="upper wave" className=" w-full" />
+      </motion.div>
+      <img src="/images/grey_wave.png" alt="upper wave" className=" w-full dark:hidden" />
     </>
   );
 };
@@ -76,15 +93,19 @@ const JoinUs = () => {
 const CardComp = (props) => {
     const { icon,title, desc, link } = props;
     return (
-      <div className="inline-block rounded-[50px] border-[3px] border-[#fff] text-center px-7 py-[55px]">
+      <motion.div initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}>
+      <motion.div variants={cardVariantsdown} className="inline-block rounded-[50px] border-[3px] border-[#fff] text-center px-7 py-[55px]">
         <Image src={icon} width={100} height={100} alt="join us" className="mx-auto"/>
-        <h3 className="md:text-4xl text-2xl md:leading-[46px] leading-normal font-semibold text-[#333] lowercase">{title}</h3>
+        <h3 className="md:text-4xl text-2xl md:leading-[46px] leading-normal font-semibold text-[#333] dark:text-white lowercase">{title}</h3>
             <p className="text-[#000] text-base text-center">
               {" "}
               {desc}
             </p>
             <button className="bg-blue rounded-[10px] min-w-[166px] min-h-[49px] text-white text-base mt-6">Read More</button>
-      </div>
+      </motion.div>
+      </motion.div>
     );
   };
 

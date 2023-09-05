@@ -16,7 +16,7 @@ const Footer = () => {
         alt="upper wave"
         className="sm:mb-[-10px] mb-[-4px] w-full dark:hidden"
       />
-      <div className="bg-[#002366] min-w-[70px] text-center color_switch h-[162px] fixed right-0 top-[40%] flex flex-col  items-center justify-evenly rounded-tl-md rounded-bl-md">
+      <div className="bg-[#002366] min-w-[70px] text-center color_switch h-[162px] fixed right-0 top-[40%] flex flex-col  items-center justify-evenly rounded-tl-md rounded-bl-md z-[999]">
         <BsFillSunFill className="text-[#93b2f0] text-xl dark:text-white" />
         <hr className="w-full h-[0.5px]" />
         <Switch

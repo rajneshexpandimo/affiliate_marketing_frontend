@@ -211,11 +211,11 @@ const GetStarted = () => {
                   <Checkbox className="text-white text-sm capitalize rounded-none pt-4 pb-8">
                     I agree to the{" "}
                     <Link href={"/terms_and_condition"} className="underline">
-                      Terms of use
+                      Terms of use 
                     </Link>
-                    And
+                    &nbsp;&nbsp; And &nbsp;&nbsp;
                     <Link href={"/privacy_policy"} className="underline">
-                      privacy policy
+                       privacy policy
                     </Link>
                   </Checkbox>
                   <Checkbox className="text-white text-sm capitalize rounded-none">

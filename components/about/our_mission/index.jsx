@@ -78,7 +78,7 @@ const OurMission = () => {
         >
       <div className="flex xl:flex-row flex-col xl:gap-0 gap-6 justify-between relative md:pt-20 pt-5">
 
-          <motion.div  variants={cardVariantsLeft} className="shrink bg-blue box-shadow-dark text-white rounded-[50px] py-8 xl:px-20 px-10 z-10 xl:max-w-[481px]  max-w-full min-h-[423px]">
+          <motion.div  variants={cardVariantsLeft} className="shrink bg-blue box-shadow-dark text-white rounded-[50px] py-8 xl:px-[86px] px-10 z-10 xl:max-w-[481px]  max-w-full min-h-[423px]">
             <Image
               src={"/icons/transparency.svg"}
               width={100}
@@ -86,16 +86,16 @@ const OurMission = () => {
               alt="Transparency"
               className="mx-auto"
             />
-            <h3 className="md:text-4xl text-2xl text-white font-semibold text-center lg:leading-[46px] leading-normal">
+            <h3 className="md:text-[32px] text-2xl text-white font-semibold text-center lg:leading-[46px] leading-normal">
               Transparency
             </h3>
-            <p className="sm:text-2xl text-lg text-center">
+            <p className="sm:text-xl text-lg text-center">
               We uphold high standards and earn trust through actions, nurturing
               it and expecting reciprocation. Our commitment is shown through
               what we do.
             </p>
           </motion.div>
-          <motion.div  variants={cardVariantsdown}  className="shrink bg-[#d3d3d3] box-shadow-dark text-[#333] rounded-[50px] py-8 xl:px-20  px-10 z-20 xl:absolute relative xl:left-0 xl:right-0 xl:top-[32%] top-0 m-auto xl:max-w-[481px] max-w-full min-h-[423px]">
+          <motion.div  variants={cardVariantsdown}  className="shrink bg-[#d3d3d3] box-shadow-dark text-[#333] rounded-[50px] py-8 xl:px-[86px]  px-10 z-20 xl:absolute relative xl:left-0 xl:right-0 xl:top-[32%] top-0 m-auto xl:max-w-[481px] max-w-full min-h-[423px]">
             <Image
               src={"/icons/GroupTask.svg"}
               width={100}
@@ -103,15 +103,15 @@ const OurMission = () => {
               alt="Transparency"
               className="mx-auto"
             />
-            <h3 className="md:text-4xl text-2xl text-[#333] font-semibold text-center lg:leading-[46px] leading-normal">
+            <h3 className="md:text-[32px] text-2xl text-[#333] font-semibold text-center lg:leading-[46px] leading-normal">
               Experienced team
             </h3>
-            <p className="sm:text-2xl text-lg text-center">
+            <p className="sm:text-xl text-lg text-center">
               Our experienced team comprises skilled professionals who offer
               diverse expertise and bring exceptional results to the table.
             </p>
           </motion.div>
-          <motion.div  variants={cardVariantsRight}  className="shrink bg-blue box-shadow-dark text-white rounded-[50px] py-8 xl:px-20 px-10 z-10 xl:max-w-[481px] max-w-full min-h-[423px]">
+          <motion.div  variants={cardVariantsRight}  className="shrink bg-blue box-shadow-dark text-white rounded-[50px] py-8 xl:px-[86px] px-10 z-10 xl:max-w-[481px] max-w-full min-h-[423px]">
             <Image
               src={"/icons/transparency.svg"}
               width={100}
@@ -119,10 +119,10 @@ const OurMission = () => {
               alt="Transparency"
               className="mx-auto"
             />
-            <h3 className="md:text-4xl text-2xl text-white font-semibold text-center lg:leading-[46px] leading-normal">
+            <h3 className="md:text-[32px] text-2xl text-white font-semibold text-center lg:leading-[46px] leading-normal">
               Security garantie
             </h3>
-            <p className="sm:text-2xl text-lg text-center">
+            <p className="sm:text-xl text-lg text-center">
               We uphold high standards and earn trust through actions, nurturing
               it and expecting reciprocation. Our commitment is shown through
               what we do.

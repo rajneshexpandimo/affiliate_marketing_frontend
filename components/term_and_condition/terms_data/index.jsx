@@ -41,7 +41,7 @@ const TermsData = () => {
           >
             <motion.h1
               // variants={cardVariantsRight}
-              className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-[#333]"
+              className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-[#333] dark:text-white"
             >
               REGISTRATION
             </motion.h1>
@@ -112,7 +112,7 @@ const TermsData = () => {
           >
             <motion.h1
               // variants={cardVariantsRight}
-              className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-[#333]"
+              className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-[#333]  dark:text-white"
             >
               PAYMENT
             </motion.h1>
@@ -249,7 +249,7 @@ const TermsData = () => {
           >
             <motion.h1
               // variants={cardVariantsRight}
-              className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-[#333]"
+              className="font-bold sm:text-[50px] text-3xl sm:pb-5 pb-0 sm:leading-[66px] leading-normal text-[#333]  dark:text-white"
             >
               CANCELLATION   <span className="text-[#295DA7]">AND TERMINATION </span> 
             </motion.h1>

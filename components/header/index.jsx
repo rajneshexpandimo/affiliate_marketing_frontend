@@ -130,7 +130,7 @@ const Header = () => {
                   defaultSelectedKeys: ["3"],
                 }}
                 trigger={["click"]}
-                className="md:hidden inline-block w-7 text-right"
+                className="md:hidden inline-block !w-7 text-right"
               >
                 <Typography.Link className="bg-white w-full block ">
                   <Space className="w-full justify-between text-[#33333380]">

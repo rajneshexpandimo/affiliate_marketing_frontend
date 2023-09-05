@@ -68,7 +68,7 @@
   /* inset-inline-start: 0px !important; */
 }
 .color_switch .ant-switch .ant-switch-handle {
-  inset-inline-start: 0px;
+  inset-inline-start: 0px;  
 }
 .box-shadow {
   box-shadow: 0 0 10px 0 #0000002e;
@@ -404,6 +404,14 @@ ul.rc_body-weekdays li span {
   height: 5px;
   display: block;
 }
+.desktop_animation_wrapper {
+  animation: none !important;
+}
+.hide_mobile_animation > * {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 }
 @media screen and (max-width:640px) {
   .promote_love_wrapper {

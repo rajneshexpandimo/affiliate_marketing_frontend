@@ -34,7 +34,7 @@ const HeroSection = () => {
           <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col-reverse justify-between ">
             <div className="lg:w-1/2 w-full ">
             <motion.div
-              className="card-container"
+              className="card-container hide_mobile_animation"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}
@@ -72,7 +72,7 @@ const HeroSection = () => {
         */}
             <div className="lg:w-1/2 w-full">
             <motion.div
-              className="card-container"
+              className="card-container hide_mobile_animation"
               initial="offscreen"
               whileInView="onscreen"
               viewport={{ once: true, amount: 0.8 }}

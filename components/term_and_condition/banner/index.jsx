@@ -30,7 +30,7 @@ const cardVariantsRight = {
 const Banner = () => {
   return (
     <>
-      <div className="bg-[#D3D3D3] w-full  xl:px-0 px-5">
+      <div className="bg-[#D3D3D3] dark:bg-black w-full  xl:px-0 px-5">
         <p className="md:max-w-[1300px] w-full mx-auto  text-center text-lg pt-8" >PLEASE READ THESE TERMS OF SERVICE CAREFULLY AS THEY CONTAIN IMPORTANT INFORMATION REGARDING YOUR LEGAL RIGHTS</p>
           <div className="md:max-w-[1300px] w-full mx-auto flex lg:flex-row flex-col-reverse justify-between sm:py-10 py-10">
             <div className="lg:w-1/2 w-full flex flex-col justify-center">
@@ -49,7 +49,7 @@ const Banner = () => {
 
               <motion.p
                 //  variants={cardVariantsLeft}
-                className="sm:text-2xl text-[18px] text-[#333333] sm:pb-12 pb-5"
+                className="sm:text-2xl text-[18px] text-[#333333] sm:pb-12 pb-5 capitalize dark:text-white"
               >
                 SocialProfit.IO is a company that enables advertisers (“Advertisers”) to market their products online with the help of publishers (“Affiliates”). SocialProfit.IO contracts only with Advertisers and has no responsibility in the relationship between Advertisers and Affiliates. SocialProfit.IO  offers tools to improve, register and facilitate online marketing through Affiliates (the “Service”). 
               </motion.p>
@@ -87,7 +87,7 @@ const Banner = () => {
             </div>
           </div>
       </div>
-      <img src="images/grey_wave.png" alt="waves" className="w-full xl:mt-0 mt-[-5px]" />
+      <img src="images/grey_wave.png" alt="waves" className="w-full xl:mt-0 mt-[-5px] dark:hidden" />
     </>
   );
 };
